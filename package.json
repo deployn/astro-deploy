@@ -2,5 +2,15 @@
   "name": "astro-deploy",
   "version": "0.0.0-development",
   "description": "A custom Astro.js template",
-  "private": true
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.4.0"
+  }
 }
