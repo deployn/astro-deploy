@@ -9,6 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "upgrade": "pnpm update --interactive --latest",
     "commit": "cz"
   },
   "dependencies": {
