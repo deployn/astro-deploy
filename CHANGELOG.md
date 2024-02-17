@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/deployn/astro-deploy/compare/v1.0.0...v1.1.0) (2024-02-17)
+
+
+### Features
+
+* **Docker:** add docker integration ([d8844bc](https://github.com/deployn/astro-deploy/commit/d8844bc907db3be48f8322eba6b41abf1400f213))
+
 # 1.0.0 (2024-02-16)
 
 
