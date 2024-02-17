@@ -26,6 +26,7 @@ docker run -d -p 1234:80 astro-deploy
 
 - 🚀 Astro.js 4
 - 🐳 Docker integration
+- 🍃 Tailwind CSS
 
 ## 🧞 Commands
 

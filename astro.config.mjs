@@ -1,3 +1,7 @@
 import { defineConfig } from 'astro/config';
+import tailwind from "@astrojs/tailwind";
 
-export default defineConfig({});
+// https://astro.build/config
+export default defineConfig({
+  integrations: [tailwind()]
+});

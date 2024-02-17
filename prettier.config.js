@@ -9,7 +9,7 @@ export default {
 	bracketSameLine: true,
 	htmlWhitespaceSensitivity: 'ignore',
 	endOfLine: 'auto',
-	plugins: ['prettier-plugin-astro'],
+	plugins: ['prettier-plugin-astro', 'prettier-plugin-tailwindcss'],
 	overrides: [
 		{
 			files: ['.*', '*.json', '*.md', '*.toml', '*.yml'],
