@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/deployn/astro-deploy/compare/v1.1.0...v1.2.0) (2024-02-17)
+
+
+### Features
+
+* **Prettier:** add prettier support ([7496556](https://github.com/deployn/astro-deploy/commit/74965569188816d773017dc70aa451760adfdeea))
+
 # [1.1.0](https://github.com/deployn/astro-deploy/compare/v1.0.0...v1.1.0) (2024-02-17)
 
 
