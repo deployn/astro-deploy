@@ -1,5 +1,6 @@
 {
   "name": "astro-deploy",
+  "type": "module",
   "version": "1.1.0",
   "description": "A custom Astro.js template",
   "private": true,
@@ -8,6 +9,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "format": "prettier -w --cache . && prettier -w --cache **/*.astro",
     "astro": "astro",
     "upgrade": "pnpm update --interactive --latest",
     "commit": "cz"
@@ -23,6 +25,8 @@
     "@semantic-release/git": "^10.0.1",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
     "semantic-release": "^23.0.2"
   },
   "config": {
