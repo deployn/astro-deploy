@@ -1,0 +1,8 @@
+.git
+.github
+.vscode
+node_modules
+.gitignore
+CHANGELOG.md
+README.md
+dist

@@ -3,13 +3,29 @@
 ## How to use this template
 
 ```sh
-npm i -g pnpm
 git clone https://github.com/deployn/astro-deploy new-astro-project
 cd new-astro-project
-pnpm install
-pnpm build
-pnpm preview
 ```
+
+Development Server:
+
+```sh
+npm i -g pnpm
+pnpm install
+pnpm dev
+```
+
+Production Build:
+
+```sh
+sudo docker build -t astro-deploy .
+docker run -d -p 1234:80 astro-deploy
+```
+
+## Features
+
+- 🚀 Astro.js 4
+- 🐳 Docker integration
 
 ## 🧞 Commands
 
