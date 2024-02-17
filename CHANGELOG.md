@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/deployn/astro-deploy/compare/v1.2.0...v1.3.0) (2024-02-17)
+
+
+### Features
+
+* add tailwind css support ([b18b952](https://github.com/deployn/astro-deploy/commit/b18b95274bbef9be60610efba155f89e92c9798e))
+
 # [1.2.0](https://github.com/deployn/astro-deploy/compare/v1.1.0...v1.2.0) (2024-02-17)
 
 
