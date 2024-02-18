@@ -8,7 +8,9 @@ cd new-astro-project
 ```
 
 Update /public/lovo.svg
+
 Update /public/site.webmanifest
+
 Update /src/\*
 
 Development Server:
