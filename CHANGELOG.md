@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/deployn/astro-deploy/compare/v1.3.0...v1.4.0) (2024-02-18)
+
+
+### Features
+
+* add PWA assets generation script and dependencies, include logo and manifest ([6e29d4f](https://github.com/deployn/astro-deploy/commit/6e29d4fe79b5ae76c03578903e5d26b87c3e54b3))
+
 # [1.3.0](https://github.com/deployn/astro-deploy/compare/v1.2.0...v1.3.0) (2024-02-17)
 
 
