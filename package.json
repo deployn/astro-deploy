@@ -16,9 +16,9 @@
     "commit": "cz"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.4",
+    "@astrojs/check": "^0.5.5",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.4.0"
+    "astro": "^4.4.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.6.1",
