@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/deployn/astro-deploy/compare/v1.4.0...v1.5.0) (2024-02-24)
+
+
+### Features
+
+* **Sitemap:** add dynamic sitemap support ([eb0b214](https://github.com/deployn/astro-deploy/commit/eb0b214054cebb5901ceee20db44e28212f03e09))
+
 # [1.4.0](https://github.com/deployn/astro-deploy/compare/v1.3.0...v1.4.0) (2024-02-18)
 
 
