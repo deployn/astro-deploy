@@ -7,11 +7,15 @@ git clone https://github.com/deployn/astro-deploy new-astro-project
 cd new-astro-project
 ```
 
-Update /public/lovo.svg
+Update /public/logo.svg
 
 Update /public/site.webmanifest
 
+Update astro.config.mjs
+
 Update /src/\*
+
+### Start the Server
 
 Development Server:
 
