@@ -23,7 +23,7 @@ Update /src/\*
 
 ### Add shadcn/ui components
 
-Visit https://ui.shadcn.com/docs/ for a list of components
+Visit <https://ui.shadcn.com/docs/> for a list of components
 
 ```sh
 pnpm dlx shadcn-ui@latest add componentName
