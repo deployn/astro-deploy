@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/deployn/astro-deploy/compare/v1.5.0...v1.6.0) (2024-02-25)
+
+
+### Features
+
+* add shadcn support ([0fed354](https://github.com/deployn/astro-deploy/commit/0fed3542a4875c7ea81f52d9c48fec0a6aecce36))
+
 # [1.5.0](https://github.com/deployn/astro-deploy/compare/v1.4.0...v1.5.0) (2024-02-24)
 
 
