@@ -1,5 +1,11 @@
 # Astro Deploy Starter
 
+## Features
+
+- 🚀 Astro.js 4
+- 🐳 Docker integration
+- 🍃 Tailwind CSS
+
 ## How to use this template
 
 ```sh
@@ -14,6 +20,14 @@ Update /public/site.webmanifest
 Update astro.config.mjs
 
 Update /src/\*
+
+### Add shadcn/ui components
+
+Visit https://ui.shadcn.com/docs/ for a list of components
+
+```sh
+pnpm dlx shadcn-ui@latest add componentName
+```
 
 ### Start the Server
 
@@ -31,12 +45,6 @@ Production Build:
 sudo docker build -t astro-deploy .
 docker run -d -p 1234:80 astro-deploy
 ```
-
-## Features
-
-- 🚀 Astro.js 4
-- 🐳 Docker integration
-- 🍃 Tailwind CSS
 
 ## 🧞 Commands
 
