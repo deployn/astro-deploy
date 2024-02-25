@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/deployn/astro-deploy/compare/v1.6.0...v1.7.0) (2024-02-25)
+
+
+### Features
+
+* add darkmode support ([f49d9f7](https://github.com/deployn/astro-deploy/commit/f49d9f791ace59f3eeb1468265064b5c9eb8d03b))
+
 # [1.6.0](https://github.com/deployn/astro-deploy/compare/v1.5.0...v1.6.0) (2024-02-25)
 
 
