@@ -2,7 +2,7 @@
 
 A custom Astro.js template
 
-![./public/pwa-512x512.png]
+![Logo](./public/pwa-512x512.png)
 
 ## Features
 
