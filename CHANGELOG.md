@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/deployn/astro-deploy/compare/v1.7.1...v1.8.0) (2024-02-26)
+
+
+### Features
+
+* **docker:** add site url as build argument ([37d3e70](https://github.com/deployn/astro-deploy/commit/37d3e7029d08d6d3bab7f1312565ed8e619a0982))
+
 ## [1.7.1](https://github.com/deployn/astro-deploy/compare/v1.7.0...v1.7.1) (2024-02-26)
 
 
