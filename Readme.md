@@ -42,7 +42,7 @@ pnpm dev
 Production Build:
 
 ```sh
-sudo docker build -t astro-deploy .
+sudo docker build . --build-arg SITE_URL=https://example.com -t astro-deploy
 docker run -d -p 1234:80 astro-deploy
 ```
 

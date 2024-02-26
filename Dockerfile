@@ -14,6 +14,10 @@ RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
 
 FROM build-deps AS build
 COPY . .
+
+ARG SITE_URL
+ENV SITE_URL=${SITE_URL}
+
 RUN pnpm run build
 
 FROM nginx:alpine AS runtime
