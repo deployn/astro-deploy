@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/deployn/astro-deploy/compare/v1.7.0...v1.7.1) (2024-02-26)
+
+
+### Bug Fixes
+
+* **robots:** move robots into pages dir for dymanic creation ([34e60b2](https://github.com/deployn/astro-deploy/commit/34e60b237c64411092b086c739c46ab5c447fa14))
+
 # [1.7.0](https://github.com/deployn/astro-deploy/compare/v1.6.0...v1.7.0) (2024-02-25)
 
 
