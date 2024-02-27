@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/deployn/astro-deploy/compare/v1.8.1...v1.8.2) (2024-02-27)
+
+
+### Bug Fixes
+
+* **ui:** update color class in header ([11b283c](https://github.com/deployn/astro-deploy/commit/11b283c63b11a426e87fbe5ef40dc86d952537f8))
+
 ## [1.8.1](https://github.com/deployn/astro-deploy/compare/v1.8.0...v1.8.1) (2024-02-27)
 
 
