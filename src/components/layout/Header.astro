@@ -1,6 +1,9 @@
 ---
 import '@/styles/globals.css';
+import { Image } from 'astro:assets';
 import { ModeToggle } from '@/components/ModeToggle';
+
+import logoImage from '@/assets/images/logo.png';
 ---
 
 <script is:inline>
@@ -22,8 +25,17 @@ import { ModeToggle } from '@/components/ModeToggle';
 	}
 </script>
 
-<header class="relative overflow-hidden bg-white dark:bg-gray-900 dark:text-gray-100">
-	<div class="flex items-center justify-center py-4 dark:text-white">
+<header
+	class="sticky top-0 z-10 block h-max w-full max-w-full rounded-none border border-white/80 bg-white bg-opacity-80 px-4 py-2 text-black shadow-md backdrop-blur-2xl backdrop-saturate-200 dark:border-black/80 dark:bg-zinc-900 dark:text-white lg:px-8 lg:py-4">
+	<div class="text-blue-gray-900 flex items-center justify-between">
+		<a
+			href="/"
+			class="mr-4 block cursor-pointer py-1.5 font-sans text-base font-medium leading-relaxed text-inherit antialiased">
+			<div class="flex items-center gap-2 lg:gap-4">
+				<Image src={logoImage} alt="Astro Deploy" class="-my-2 size-10 lg:-my-4 lg:size-14" />
+				Astro Deploy
+			</div>
+		</a>
 		<ModeToggle client:load />
 	</div>
 </header>
