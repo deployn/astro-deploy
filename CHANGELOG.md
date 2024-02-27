@@ -1,3 +1,11 @@
+## [1.8.1](https://github.com/deployn/astro-deploy/compare/v1.8.0...v1.8.1) (2024-02-27)
+
+
+### Bug Fixes
+
+* add sharp for image transformation ([7d8d54e](https://github.com/deployn/astro-deploy/commit/7d8d54ef15c8088bf3a2ba00fa0569b1ea45636b))
+* **ui:** update header component ([0a7966d](https://github.com/deployn/astro-deploy/commit/0a7966d4d9001fe4321483e83a325e756cf7049c))
+
 # [1.8.0](https://github.com/deployn/astro-deploy/compare/v1.7.1...v1.8.0) (2024-02-26)
 
 
