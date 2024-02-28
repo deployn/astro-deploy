@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/deployn/astro-deploy/compare/v1.9.0...v1.10.0) (2024-02-28)
+
+
+### Features
+
+* **ui:** add heading component ([c76e15f](https://github.com/deployn/astro-deploy/commit/c76e15ff2fdb817113be4a06f21a211048919444))
+
 # [1.9.0](https://github.com/deployn/astro-deploy/compare/v1.8.2...v1.9.0) (2024-02-28)
 
 
