@@ -1,0 +1,23 @@
+---
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+
+import logoImage from '@/assets/images/logo.png';
+---
+
+<div class="mx-auto w-full max-w-7xl px-8">
+	<div
+		class="flex w-full flex-col items-center justify-center border-t border-zinc-50 py-4 dark:border-zinc-900 md:flex-row md:justify-between">
+		<p
+			class="mb-4 block text-center font-sans text-sm font-normal leading-normal text-zinc-900 antialiased dark:text-zinc-100 md:mb-0">
+			© 2024
+			<a href="/">Astro Deploy</a>. All Rights Reserved.
+		</p><div class="flex gap-4 text-zinc-900 dark:text-zinc-100 sm:justify-center">
+			<a
+				href="https://github.com/deployn/astro-deploy"
+				class="block font-sans text-base font-light leading-relaxed text-inherit antialiased opacity-80 transition-opacity hover:opacity-100">
+				<Icon name="line-md:github" class="size-5" fill="currentColor" aria-hidden="true" />
+			</a>
+		</div>
+	</div>
+</div>
