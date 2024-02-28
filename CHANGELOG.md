@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/deployn/astro-deploy/compare/v1.8.2...v1.9.0) (2024-02-28)
+
+
+### Features
+
+* **layout:** add footer component ([39dfa3a](https://github.com/deployn/astro-deploy/commit/39dfa3a8fcd7d9a447625fba5290f45affea9b4a))
+
 ## [1.8.2](https://github.com/deployn/astro-deploy/compare/v1.8.1...v1.8.2) (2024-02-27)
 
 
