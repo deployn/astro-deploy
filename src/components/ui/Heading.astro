@@ -1,0 +1,25 @@
+---
+interface Props {
+	level?: 1 | 2 | 3 | 4 | 5 | 6;
+	classes?: string;
+}
+
+const { level = 2, classes = '', ...rest } = Astro.props as Props;
+
+const HeadingTag = `h${level}` as `h${1 | 2 | 3 | 4 | 5 | 6}`;
+
+const headingStyles = {
+	h1: 'text-4xl md:text-5xl lg:text-7xl font-bold',
+	h2: 'text-3xl md:text-4xl lg:text-5xl font-bold',
+	h3: 'text-2xl font-semibold',
+	h4: 'text-xl font-semibold',
+	h5: 'text-lg font-semibold',
+	h6: 'text-base font-semibold',
+};
+
+const classList = `${headingStyles[HeadingTag]} ${classes}`;
+---
+
+<HeadingTag class={classList.trim()} {...rest}>
+	<slot />
+</HeadingTag>

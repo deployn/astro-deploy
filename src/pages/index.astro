@@ -1,7 +1,10 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import Heading from '@/components/ui/Heading.astro';
 ---
 
 <BaseLayout title="Astro Deploy">
-	<div class="flex items-center justify-center px-4 pt-48 dark:text-white">Hello World</div>
+	<div class="flex items-center justify-center px-4 pt-48 dark:text-white">
+		<Heading level={1} classes="text-zinc-900 dark:text-zinc-200">Hello World</Heading>
+	</div>
 </BaseLayout>
