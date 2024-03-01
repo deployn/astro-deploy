@@ -1,10 +1,31 @@
 ---
+import { Icon } from 'astro-icon/components';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Heading from '@/components/ui/Heading.astro';
 ---
 
 <BaseLayout title="Astro Deploy">
-	<div class="flex items-center justify-center px-4 pt-48 dark:text-white">
-		<Heading level={1} classes="text-zinc-900 dark:text-zinc-200">Hello World</Heading>
+	<div class="mx-auto px-4 pb-36 pt-24 sm:px-6 lg:px-8">
+		<Heading level={1} classes="text-center text-zinc-900 dark:text-zinc-200">
+			Deploy Your
+			<span
+				class="via-accent-600 dark:from-accent from-accent-600 bg-gradient-to-r to-zinc-900 bg-clip-text text-transparent dark:to-zinc-200">
+				Astro.js
+			</span>
+			Site!</Heading
+		>
+
+		<p class="mx-auto mt-5 max-w-3xl text-center text-lg text-zinc-900/70 dark:text-zinc-400">
+			Supercharge your website with the Astro Deploy boilerplate with Docker support for
+			out-of-this-world web experiences. Launch today!
+		</p>
+		<div class="mt-8 grid w-full gap-3 sm:inline-flex sm:justify-center">
+			<a
+				href="https://github.com/deployn/astro-deploy"
+				class="bg-primary-600 focus:ring-primary-700 focus:ring-offset-base-50 inline-flex items-center justify-center gap-x-3 rounded-full px-8 py-4 text-center text-base text-sm font-medium ring-4 ring-transparent focus:outline-none focus:ring-2 dark:focus:ring-offset-zinc-800">
+				<span>Get started!</span>
+				<Icon name="line-md:chevron-right" class="size-3" />
+			</a>
+		</div>
 	</div>
 </BaseLayout>
