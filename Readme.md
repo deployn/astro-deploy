@@ -17,13 +17,11 @@ git clone https://github.com/deployn/astro-deploy new-astro-project
 cd new-astro-project
 ```
 
-Update /public/logo.svg
-
-Update /public/site.webmanifest
-
-Update astro.config.mjs
-
-Update /src/\*
+- Update /public/logo.svg
+- Update /public/site.webmanifest
+- Update astro.config.mjs
+- Update colors in tailwind.config.mjs
+- Update /src/\*
 
 ### Add shadcn/ui components
 
