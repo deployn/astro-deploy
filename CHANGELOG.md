@@ -1,3 +1,21 @@
+# [1.11.0](https://github.com/deployn/astro-deploy/compare/v1.10.0...v1.11.0) (2024-03-01)
+
+
+### Bug Fixes
+
+* **ui:** add aria-label to social link icon ([69ef8f9](https://github.com/deployn/astro-deploy/commit/69ef8f965915987f2002b7c6f141f9740c09b9e5))
+* update index page ([5492587](https://github.com/deployn/astro-deploy/commit/54925872ec3db54b7214fa2f1390617402b0b496))
+
+
+### Features
+
+* **tailwind:** add custom colors to tailwind config ([bae6a1c](https://github.com/deployn/astro-deploy/commit/bae6a1c4f02e222a73b5dce4c3d72c16623681a2))
+
+
+### Performance Improvements
+
+* **ui:** eager load header logo ([25d7c75](https://github.com/deployn/astro-deploy/commit/25d7c75d942047b61535208ae111a4cb3cf74ee2))
+
 # [1.10.0](https://github.com/deployn/astro-deploy/compare/v1.9.0...v1.10.0) (2024-02-28)
 
 
