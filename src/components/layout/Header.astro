@@ -31,7 +31,12 @@ import logoImage from '@/assets/images/logo.png';
 			href="/"
 			class="mr-4 block cursor-pointer py-1.5 font-sans text-base font-medium leading-relaxed text-inherit antialiased">
 			<div class="flex items-center gap-2 lg:gap-4">
-				<Image src={logoImage} alt="Astro Deploy" class="-my-2 size-10 lg:-my-4 lg:size-14" />
+				<Image
+					src={logoImage}
+					alt="Astro Deploy"
+					class="-my-2 size-10 lg:-my-4 lg:size-14"
+					loading="eager"
+				/>
 				Astro Deploy
 			</div>
 		</a>
