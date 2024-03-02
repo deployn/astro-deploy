@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/deployn/astro-deploy/compare/v1.13.0...v1.13.1) (2024-03-02)
+
+
+### Bug Fixes
+
+* **nginx:** terminate line by ; ([74d3362](https://github.com/deployn/astro-deploy/commit/74d33622d7b7a326ab137656742cb1f4d4a26205))
+
 # [1.13.0](https://github.com/deployn/astro-deploy/compare/v1.12.0...v1.13.0) (2024-03-02)
 
 
