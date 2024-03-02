@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/deployn/astro-deploy/compare/v1.12.0...v1.13.0) (2024-03-02)
+
+
+### Features
+
+* **nginx:** update custom nginx config ([bb18a47](https://github.com/deployn/astro-deploy/commit/bb18a4757970a6c9c38217ee615cf2b0a3451d68))
+
 # [1.12.0](https://github.com/deployn/astro-deploy/compare/v1.11.1...v1.12.0) (2024-03-02)
 
 
