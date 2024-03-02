@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/deployn/astro-deploy/compare/v1.11.1...v1.12.0) (2024-03-02)
+
+
+### Features
+
+* **nginx:** use a adjustable nginx config file ([4adf2bc](https://github.com/deployn/astro-deploy/commit/4adf2bc3ece107c1dc9ebdb55c9ceb99e8862eb7))
+
 ## [1.11.1](https://github.com/deployn/astro-deploy/compare/v1.11.0...v1.11.1) (2024-03-02)
 
 
