@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/deployn/astro-deploy/compare/v1.11.0...v1.11.1) (2024-03-02)
+
+
+### Bug Fixes
+
+* **Dockerfile:** specify nginx version for better predictability ([7d05720](https://github.com/deployn/astro-deploy/commit/7d057206d64923e8ae369e90ab1d16debc90e802))
+
 # [1.11.0](https://github.com/deployn/astro-deploy/compare/v1.10.0...v1.11.0) (2024-03-01)
 
 
