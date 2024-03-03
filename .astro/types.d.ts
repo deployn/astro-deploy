@@ -135,44 +135,41 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"blog": {
-"10-essential-web-development-tools-for-building-stunning-websites.mdx": {
-	id: "10-essential-web-development-tools-for-building-stunning-websites.mdx";
-  slug: "10-essential-web-development-tools-for-building-stunning-websites";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
-"essential-frontend-tools-for-astro-js-developers.mdx": {
-	id: "essential-frontend-tools-for-astro-js-developers.mdx";
-  slug: "essential-frontend-tools-for-astro-js-developers";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
-"exploring-nodejs-development-trends-2024.mdx": {
-	id: "exploring-nodejs-development-trends-2024.mdx";
-  slug: "exploring-nodejs-development-trends-2024";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
-"unleasing-the-power-of-astro-js-for-better-web-development.mdx": {
-	id: "unleasing-the-power-of-astro-js-for-better-web-development.mdx";
-  slug: "unleasing-the-power-of-astro-js-for-better-web-development";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
-};
-
+		blog: {
+			'10-essential-web-development-tools-for-building-stunning-websites.mdx': {
+				id: '10-essential-web-development-tools-for-building-stunning-websites.mdx';
+				slug: '10-essential-web-development-tools-for-building-stunning-websites';
+				body: string;
+				collection: 'blog';
+				data: InferEntrySchema<'blog'>;
+			} & { render(): Render['.mdx'] };
+			'essential-frontend-tools-for-astro-js-developers.mdx': {
+				id: 'essential-frontend-tools-for-astro-js-developers.mdx';
+				slug: 'essential-frontend-tools-for-astro-js-developers';
+				body: string;
+				collection: 'blog';
+				data: InferEntrySchema<'blog'>;
+			} & { render(): Render['.mdx'] };
+			'exploring-nodejs-development-trends-2024.mdx': {
+				id: 'exploring-nodejs-development-trends-2024.mdx';
+				slug: 'exploring-nodejs-development-trends-2024';
+				body: string;
+				collection: 'blog';
+				data: InferEntrySchema<'blog'>;
+			} & { render(): Render['.mdx'] };
+			'unleasing-the-power-of-astro-js-for-better-web-development.mdx': {
+				id: 'unleasing-the-power-of-astro-js-for-better-web-development.mdx';
+				slug: 'unleasing-the-power-of-astro-js-for-better-web-development';
+				body: string;
+				collection: 'blog';
+				data: InferEntrySchema<'blog'>;
+			} & { render(): Render['.mdx'] };
+		};
 	};
 
-	type DataEntryMap = {
-		
-	};
+	type DataEntryMap = {};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../src/content/config.js");
+	export type ContentConfig = typeof import('../src/content/config.js');
 }
