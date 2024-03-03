@@ -24,7 +24,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-slot": "^1.0.2",
-    "astro": "^4.4.6",
+    "astro": "^4.4.9",
     "astro-icon": "^1.1.0"
   },
   "devDependencies": {
@@ -44,7 +44,7 @@
     "clsx": "^2.1.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "lucide-react": "^0.343.0",
+    "lucide-react": "^0.344.0",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "prettier-plugin-tailwindcss": "^0.5.11",
