@@ -25,11 +25,26 @@ import logoImage from '@/assets/images/logo.png';
 </script>
 
 <header
+	x-data={`{
+    open: window.innerWidth < 640 ? false : true,
+    windowWidth: window.innerWidth,
+    init() {
+        this.$watch('windowWidth', value => {
+            this.open = value < 640 ? false : true;
+        });
+        window.addEventListener('resize', () => {
+            this.$nextTick(() => {
+                this.windowWidth = window.innerWidth;
+            });
+        });
+    }
+}`}
+	x-init="init()"
 	class="sticky top-0 z-10 block h-max w-full max-w-full rounded-none border border-white/80 bg-opacity-80 px-4 py-2 text-black shadow-md backdrop-blur-2xl backdrop-saturate-200 dark:border-black/80 dark:bg-zinc-900 lg:px-8 lg:py-4">
 	<div class="flex items-center justify-between text-zinc-900 dark:text-zinc-100">
 		<a
 			href="/"
-			class="mr-4 block cursor-pointer py-1.5 font-sans text-base font-medium leading-relaxed text-inherit antialiased">
+			class="mr-4 block cursor-pointer py-1.5 font-sans text-base font-semibold leading-relaxed text-inherit antialiased lg:ml-2">
 			<div class="flex items-center gap-2 lg:gap-4">
 				<Image
 					src={logoImage}
@@ -40,6 +55,89 @@ import logoImage from '@/assets/images/logo.png';
 				Astro Deploy
 			</div>
 		</a>
-		<ModeToggle client:load />
+		<div class="hidden sm:block">
+			<nav
+				class="mb-6 mt-4 flex min-w-60 flex-col gap-1 p-0 font-sans text-base font-normal text-zinc-700 dark:text-zinc-300 sm:mb-0 sm:mt-0 sm:flex-row sm:p-1">
+				<a
+					href="/"
+					class="block font-sans text-sm font-medium leading-normal text-zinc-900 antialiased dark:text-zinc-100">
+					<div
+						role="button"
+						class="w-full gap-2 rounded-lg pr-4 text-start leading-tight transition-all hover:bg-zinc-50 dark:hover:bg-zinc-950">
+						Home
+					</div>
+				</a>
+				<a
+					href="/blog/"
+					class="block font-sans text-sm font-medium leading-normal text-zinc-900 antialiased dark:text-zinc-100">
+					<div
+						role="button"
+						class="w-full gap-2 rounded-lg pr-4 text-start leading-tight transition-all hover:bg-zinc-50 dark:hover:bg-zinc-950">
+						Blog
+					</div>
+				</a>
+			</nav>
+		</div>
+		<div class="flex">
+			<button
+				class="relative h-10 w-10 text-gray-500 focus:outline-none sm:hidden"
+				aria-controls="menu"
+				@click="open = !open">
+				<span class="sr-only">Open main menu</span>
+				<span
+					class="absolute left-1/2 top-1/2 block w-5 -translate-x-1/2 -translate-y-1/2 transform">
+					<span
+						aria-hidden="true"
+						class="absolute block h-0.5 w-5 transform bg-current transition duration-200 ease-in-out"
+						:class="{'rotate-45': open,' -translate-y-1.5': !open }">
+					</span>
+					<span
+						aria-hidden="true"
+						class="absolute block h-0.5 w-5 transform bg-current transition duration-200 ease-in-out"
+						:class="{'opacity-0': open } ">
+					</span>
+					<span
+						aria-hidden="true"
+						class="absolute block h-0.5 w-5 transform bg-current transition duration-200 ease-in-out"
+						:class="{'-rotate-45': open, ' translate-y-1.5': !open}">
+					</span>
+				</span>
+			</button>
+			<ModeToggle client:load />
+		</div>
+	</div>
+	<div class="block w-full basis-full overflow-hidden sm:hidden">
+		<nav
+			id="menu"
+			:class="{'flex': open, 'hidden': !open}"
+			x-show="open"
+			x-transition:enter="transition ease-out duration-200"
+			x-transition:enter-start="opacity-0 transform scale-90"
+			x-transition:enter-end="opacity-100 transform scale-100"
+			x-transition:leave="transition ease-in duration-200"
+			x-transition:leave-start="opacity-100 transform scale-100"
+			x-transition:leave-end="opacity-0 transform scale-90"
+			class="mb-6 mt-4 hidden min-w-60 flex-col gap-1 p-0 font-sans text-base font-normal text-zinc-700 dark:text-zinc-300 sm:mb-0 sm:mt-0 sm:block sm:flex-row sm:p-1">
+			<a
+				href="/"
+				class="block font-sans text-sm font-medium leading-normal text-zinc-900 antialiased dark:text-zinc-100">
+				<div
+					role="button"
+					tabindex="0"
+					class="flex w-full items-center gap-2 rounded-lg p-3 py-2 pr-4 text-start leading-tight outline-none transition-all hover:bg-zinc-50 hover:bg-opacity-80 hover:text-zinc-900 focus:bg-zinc-50 focus:bg-opacity-80 focus:text-zinc-900 active:bg-zinc-50 active:bg-opacity-80 active:text-zinc-900">
+					Home
+				</div>
+			</a>
+			<a
+				href="/blog/"
+				class="block font-sans text-sm font-medium leading-normal text-zinc-900 antialiased dark:text-zinc-100">
+				<div
+					role="button"
+					tabindex="0"
+					class="flex w-full items-center gap-2 rounded-lg p-3 py-2 pr-4 text-start leading-tight outline-none transition-all hover:bg-zinc-50 hover:bg-opacity-80 hover:text-zinc-900 focus:bg-zinc-50 focus:bg-opacity-80 focus:text-zinc-900 active:bg-zinc-50 active:bg-opacity-80 active:text-zinc-900">
+					Blog
+				</div>
+			</a>
+		</nav>
 	</div>
 </header>

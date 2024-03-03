@@ -10,6 +10,9 @@ A custom Astro.js template
 - 🐳 Docker integration
 - 🍃 Tailwind CSS
 - 🖊️ MDX Blog
+- ⚛️ React.js
+- 🏔️ Alpine.js integration
+- 📘 TypeScript
 
 ## How to use this template
 
@@ -69,6 +72,7 @@ All commands are run from the root of the project, from a terminal:
 
 - [Astro.js Basic Example](https://github.com/withastro/astro/tree/main/examples/basics)
 - [Astro.js Docs](https://docs.astro.build/)
+- [Astro Starter Kit](https://github.com/zankhq/astro-starter)
 - [Docker](https://www.docker.com/)
 - [Material-Tailwind](https://www.material-tailwind.com/)
 - [nginx](https://www.nginx.com/)
