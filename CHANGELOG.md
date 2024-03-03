@@ -1,3 +1,10 @@
+# [1.15.0-beta.2](https://github.com/deployn/astro-deploy/compare/v1.15.0-beta.1...v1.15.0-beta.2) (2024-03-03)
+
+
+### Features
+
+* **blog:** use responsive table in mdx blog ([e0f6525](https://github.com/deployn/astro-deploy/commit/e0f65256cd7eb3922ab402bfadd4799d90682ad3))
+
 # [1.15.0-beta.1](https://github.com/deployn/astro-deploy/compare/v1.14.0...v1.15.0-beta.1) (2024-03-03)
 
 
