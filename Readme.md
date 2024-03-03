@@ -9,6 +9,7 @@ A custom Astro.js template
 - 🚀 Astro.js 4
 - 🐳 Docker integration
 - 🍃 Tailwind CSS
+- 🖊️ MDX Blog
 
 ## How to use this template
 
