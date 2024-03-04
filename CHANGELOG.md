@@ -1,3 +1,17 @@
+# [1.15.0](https://github.com/deployn/astro-deploy/compare/v1.14.0...v1.15.0) (2024-03-04)
+
+
+### Bug Fixes
+
+* move type import into type-only import ([e92e713](https://github.com/deployn/astro-deploy/commit/e92e7139c1ed5265e08c13785306c7e3c5ccda5a))
+
+
+### Features
+
+* **blog:** add mdx blog functionality ([7607ff0](https://github.com/deployn/astro-deploy/commit/7607ff07fbfc1b10c232c9184170135cd082fd33))
+* **blog:** use responsive table in mdx blog ([e0f6525](https://github.com/deployn/astro-deploy/commit/e0f65256cd7eb3922ab402bfadd4799d90682ad3))
+* **ui:** add navigation to header ([d8615eb](https://github.com/deployn/astro-deploy/commit/d8615eb1ee8dd7e389f906911619c756485e0ae5))
+
 # [1.15.0-beta.2](https://github.com/deployn/astro-deploy/compare/v1.15.0-beta.1...v1.15.0-beta.2) (2024-03-03)
 
 
