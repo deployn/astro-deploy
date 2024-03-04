@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/deployn/astro-deploy/compare/v1.16.0...v1.17.0) (2024-03-04)
+
+
+### Features
+
+* **header:** highlight active nav link ([cb051e9](https://github.com/deployn/astro-deploy/commit/cb051e9b6efab66bde946b89f074ceb14ca2764a))
+
 # [1.16.0](https://github.com/deployn/astro-deploy/compare/v1.15.1...v1.16.0) (2024-03-04)
 
 
