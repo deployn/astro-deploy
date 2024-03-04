@@ -1,8 +1,11 @@
 {
   "recommendations": [
+    "adrianwilczynski.alpine-js-intellisense",
     "astro-build.astro-vscode",
     "bradlc.vscode-tailwindcss",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "frontmatter.frontmatter-vscode",
+    "unifiedjs.vscode-mdx"
   ],
   "unwantedRecommendations": []
 }
