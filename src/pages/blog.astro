@@ -18,8 +18,11 @@ const allBlogposts = await getCollection('blog');
 						<h2 class="text-lg font-semibold text-zinc-800 hover:text-zinc-600 dark:text-zinc-200 dark:hover:text-zinc-400 sm:text-xl">
 							<a href={`/blog/${post.slug}`}>{post.data.title}</a>
 						</h2>
+						<p class="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+							{post.data.description}
+						</p>
 						<a
-							class="text-primary-600 hover:text-primary-400 dark:text-primary-400 dark:hover:text-primary-300 text-sm font-medium"
+							class="text-sm font-medium text-primary-600 hover:text-primary-400 dark:text-primary-400 dark:hover:text-primary-300"
 							href={`/blog/${post.slug}`}>
 							Read more
 						</a>
