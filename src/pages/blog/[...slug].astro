@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Table from '@/components/blog/Table.astro';
+
+export async function getStaticPaths() {
+	const blogEntries = await getCollection('blog');
+	return blogEntries.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry },
+	}));
+}
+
+interface Props {
+	entry: CollectionEntry<'blog'>;
+}
+
+const { entry } = Astro.props as Props;
+const { Content } = await entry.render();
+const components = { table: Table };
+const { title } = entry.data;
+---
+
+<BaseLayout>
+	<div
+		class="prose dark:prose-invert container mx-auto space-y-16 px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl">
+		<h1 class="text-4xl font-bold">{title}</h1>
+		<Content components={components} />
+	</div>
+</BaseLayout>
