@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/deployn/astro-deploy/compare/v1.15.0...v1.15.1) (2024-03-04)
+
+
+### Bug Fixes
+
+* **ui:** enhance spacing and layout ([6df0274](https://github.com/deployn/astro-deploy/commit/6df0274c3a10a66e1ef1f2603c4e4d13e9476a13))
+
 # [1.15.0](https://github.com/deployn/astro-deploy/compare/v1.14.0...v1.15.0) (2024-03-04)
 
 
