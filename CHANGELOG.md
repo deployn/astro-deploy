@@ -1,3 +1,17 @@
+# [1.18.0](https://github.com/deployn/astro-deploy/compare/v1.17.2...v1.18.0) (2024-03-04)
+
+
+### Bug Fixes
+
+* **blog:** check spelling ([cf4d77e](https://github.com/deployn/astro-deploy/commit/cf4d77ed4b854075bb8f024b6a23f3294041cfcc))
+* **content:** update table formatting ([02bc50a](https://github.com/deployn/astro-deploy/commit/02bc50a0ce35487f698ebddf198605d760813833))
+
+
+### Features
+
+* **blog:** add description to blogposts ([eff2466](https://github.com/deployn/astro-deploy/commit/eff2466873f2977e878839301a0fb1c9687d4444))
+* **blog:** add descriptions to bloglist ([37c9b21](https://github.com/deployn/astro-deploy/commit/37c9b21ec9c44278a9133b9861d6016d5d2a6345))
+
 ## [1.17.2](https://github.com/deployn/astro-deploy/compare/v1.17.1...v1.17.2) (2024-03-04)
 
 
