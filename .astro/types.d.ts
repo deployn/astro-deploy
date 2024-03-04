@@ -157,6 +157,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
+"modern-web-frameworks-introduction.mdx": {
+	id: "modern-web-frameworks-introduction.mdx";
+  slug: "modern-web-frameworks-introduction";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 "unleasing-the-power-of-astro-js-for-better-web-development.mdx": {
 	id: "unleasing-the-power-of-astro-js-for-better-web-development.mdx";
   slug: "unleasing-the-power-of-astro-js-for-better-web-development";
