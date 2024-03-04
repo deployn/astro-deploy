@@ -1,8 +1,10 @@
+.frontmatter
 .git
 .github
-.vscode
-node_modules
 .gitignore
+.vscode
 CHANGELOG.md
-README.md
 dist
+frontmatter.json
+node_modules
+README.md
