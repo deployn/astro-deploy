@@ -1,3 +1,10 @@
+## [1.17.2](https://github.com/deployn/astro-deploy/compare/v1.17.1...v1.17.2) (2024-03-04)
+
+
+### Bug Fixes
+
+* **header:** remove inner div from nav links ([e73be91](https://github.com/deployn/astro-deploy/commit/e73be9112f68178db634ef06ff567450c7761338))
+
 ## [1.17.1](https://github.com/deployn/astro-deploy/compare/v1.17.0...v1.17.1) (2024-03-04)
 
 
