@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/deployn/astro-deploy/compare/v1.17.0...v1.17.1) (2024-03-04)
+
+
+### Bug Fixes
+
+* **header:** resize nav links on larger screens ([1d89df8](https://github.com/deployn/astro-deploy/commit/1d89df87acd36ed7a29a4decdffe19882ff48251))
+
 # [1.17.0](https://github.com/deployn/astro-deploy/compare/v1.16.0...v1.17.0) (2024-03-04)
 
 
