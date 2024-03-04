@@ -12,6 +12,12 @@
           "type": "string",
           "single": true,
           "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "single": true,
+          "required": true
         }
       ]
     }
@@ -22,9 +28,7 @@
     {
       "title": "blog",
       "path": "[[workspace]]/src/content/blog",
-      "contentTypes": [
-        "blog"
-      ]
+      "contentTypes": ["blog"]
     }
   ],
   "frontMatter.content.publicFolder": {
