@@ -28,6 +28,16 @@ cd new-astro-project
 - Update colors in tailwind.config.mjs
 - Update /src/\*
 
+### Directus
+
+If you don't want to use Directus CMS:
+
+- Delete /src/lib/directus.ts
+- Delete /src/pages/recipes.astro
+- `pnpm remove @directus/sdk`
+
+If you want to use Directus, make sure to grant the view permission to the public for the collection and `directus_fields` in your Directus dashboard. Adjust the /src/lib/directus for your content.
+
 ### Add shadcn/ui components
 
 Visit <https://ui.shadcn.com/docs/> for a list of components
@@ -49,7 +59,7 @@ pnpm dev
 Production Build:
 
 ```sh
-sudo docker build . --build-arg SITE_URL=https://example.com -t astro-deploy
+sudo docker build . --build-arg SITE_URL=https://example.com --build-arg DIRECTUS_URL=https://example.directus.com -t astro-deploy
 docker run -d -p 1234:80 astro-deploy
 ```
 
@@ -74,6 +84,7 @@ All commands are run from the root of the project, from a terminal:
 - [Astro.js Basic Example](https://github.com/withastro/astro/tree/main/examples/basics)
 - [Astro.js Docs](https://docs.astro.build/)
 - [Astro Starter Kit](https://github.com/zankhq/astro-starter)
+- [Directus](https://directus.io/)
 - [Docker](https://www.docker.com/)
 - [Frontmatter CMS](https://frontmatter.codes/)
 - [Material-Tailwind](https://www.material-tailwind.com/)
