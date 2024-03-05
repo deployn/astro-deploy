@@ -2,6 +2,8 @@
 import directus from '@/lib/directus.ts';
 import { readItems } from '@directus/sdk';
 
+import { Image } from 'astro:assets';
+
 const DIRECTUS_URL = process.env.DIRECTUS_URL || 'https://directus.astro.deployn.de';
 
 import BaseLayout from '@/layouts/BaseLayout.astro';
@@ -26,9 +28,10 @@ const recipes = await directus.request(
 			{
 				recipes.map((recipe) => (
 					<li class="overflow-hidden rounded-lg bg-white shadow dark:bg-zinc-800">
-						<img
+						<Image
 							class="h-48 w-full object-cover"
-							src={`${DIRECTUS_URL}/assets/${recipe.image}?width=250`}
+							src={`${DIRECTUS_URL}/assets/${recipe.image}`}
+							inferSize
 							alt={recipe.name}
 						/>
 						<div class="p-6">
