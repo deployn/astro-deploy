@@ -10,7 +10,7 @@ type Recipe = {
 };
 
 type Schema = {
-	recipes: Recipe[];
+	Recipe: Recipe[];
 };
 
 const directus = createDirectus<Schema>(DIRECTUS_URL).with(rest());

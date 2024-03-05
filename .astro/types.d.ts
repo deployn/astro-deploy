@@ -143,6 +143,20 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
+"comparing-mvc-frameworks.mdx": {
+	id: "comparing-mvc-frameworks.mdx";
+  slug: "comparing-mvc-frameworks";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
+"dockerizing-front-end-development.mdx": {
+	id: "dockerizing-front-end-development.mdx";
+  slug: "dockerizing-front-end-development";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 "essential-frontend-tools-for-astro-js-developers.mdx": {
 	id: "essential-frontend-tools-for-astro-js-developers.mdx";
   slug: "essential-frontend-tools-for-astro-js-developers";

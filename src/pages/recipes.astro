@@ -1,0 +1,32 @@
+---
+import directus from '@/lib/directus.ts';
+import { readItems } from '@directus/sdk';
+
+const DIRECTUS_URL = process.env.DIRECTUS_URL || 'https://directus.astro.deployn.de';
+
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Heading from '@/components/ui/Heading.astro';
+
+const recipes = await directus.request(
+	readItems('Recipe', {
+		fields: ['name', 'description', 'image'],
+		sort: ['name'],
+	})
+);
+---
+
+<BaseLayout title="Recipes">
+	<Heading level={1}>Recipes</Heading>
+	<p>Here are some of my favorite recipes.</p>
+	<ul>
+		{
+			recipes.map((recipe) => (
+				<li>
+					<h2 class="mt-4 text-xl">{recipe.name}</h2>
+					<p>{recipe.description}</p>
+					<img src={`${DIRECTUS_URL}/assets/${recipe.image}?width=250`} alt={recipe.name} />
+				</li>
+			))
+		}
+	</ul>
+</BaseLayout>
