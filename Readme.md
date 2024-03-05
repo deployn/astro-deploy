@@ -36,7 +36,7 @@ If you don't want to use Directus CMS:
 - Delete /src/pages/recipes.astro
 - `pnpm remove @directus/sdk`
 
-If you want to use Directus, make sure to grant the view permission to the public for the collection and `directus_fields` in your Directus dashboard. Adjust the /src/lib/directus for your content.
+If you want to use Directus, make sure to grant the view permission to the public for the collection(s) you want to use and `directus_fields` in your Directus dashboard. Adjust the /src/lib/directus for your content.
 
 ### Add shadcn/ui components
 
