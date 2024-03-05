@@ -17,6 +17,8 @@ FROM build-deps AS build
 COPY . .
 ARG SITE_URL
 ENV SITE_URL=${SITE_URL}
+ARG DIRECTUS_URL
+ENV DIRECTUS_URL=${DIRECTUS_URL}
 RUN pnpm run build
 
 FROM nginx:1.25-alpine AS runtime
