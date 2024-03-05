@@ -46,6 +46,9 @@ devDependencies:
   '@commitlint/cz-commitlint':
     specifier: ^19.0.3
     version: 19.0.3(@types/node@20.11.24)(commitizen@4.3.0)(inquirer@9.2.15)(typescript@5.3.3)
+  '@directus/sdk':
+    specifier: ^15.0.1
+    version: 15.0.1
   '@iconify-json/line-md':
     specifier: ^1.1.36
     version: 1.1.36
@@ -878,6 +881,17 @@ packages:
     dependencies:
       '@types/conventional-commits-parser': 5.0.0
       chalk: 5.3.0
+    dev: true
+
+  /@directus/sdk@15.0.1:
+    resolution: {integrity: sha512-NuP+S2SZ23gmcSNnHiX7LxlUxkdIjX0mV3kFKqTdU07epj4OJNHk7ZXfSV2y67fnQjFrb7apTHe2LdWnU8Y6vQ==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      '@directus/system-data': 1.0.0
+    dev: true
+
+  /@directus/system-data@1.0.0:
+    resolution: {integrity: sha512-AKzYkLg39phx9AysQhcf7AmIGq1D/PIkor5B8Y5NB8R+jq+jkH1PBtg/l5Ev4hfsidpNBi5DmpuFy/xmQEYhHQ==}
     dev: true
 
   /@emmetio/abbreviation@2.3.3:
