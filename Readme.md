@@ -10,6 +10,7 @@ A custom Astro.js template
 - 🐳 Docker integration
 - 🍃 Tailwind CSS
 - 🖊️ MDX Blog
+- 🐇 Directus CMS support
 - ⚛️ React.js
 - 🏔️ Alpine.js integration
 - 📘 TypeScript
