@@ -1,0 +1,46 @@
+---
+import directus from '@/lib/directus.ts';
+import { readItems } from '@directus/sdk';
+
+import { Image } from 'astro:assets';
+
+const DIRECTUS_URL = process.env.DIRECTUS_URL || 'https://directus.astro.deployn.de';
+
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Heading from '@/components/ui/Heading.astro';
+
+const recipes = await directus.request(
+	readItems('Recipe', {
+		fields: ['name', 'description', 'image'],
+		sort: ['name'],
+	})
+);
+---
+
+<BaseLayout title="Recipes">
+	<div class="container mx-auto px-4 py-16 sm:py-24 lg:px-8 lg:py-32 xl:max-w-7xl">
+		<div class="mb-12 text-center text-zinc-900 dark:text-zinc-200">
+			<Heading level={1}>Recipes</Heading>
+			<p>Here are some of my favorite recipes. They are fetched through Directus CMS.</p>
+		</div>
+		<hr class="mb-12 dark:border-zinc-700/75" />
+		<ul class="grid gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8">
+			{
+				recipes.map((recipe) => (
+					<li class="overflow-hidden rounded-lg bg-white shadow dark:bg-zinc-800">
+						<Image
+							class="h-48 w-full object-cover"
+							src={`${DIRECTUS_URL}/assets/${recipe.image}`}
+							inferSize
+							alt={recipe.name}
+						/>
+						<div class="p-6">
+							<h2 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100">{recipe.name}</h2>
+							<p class="mt-2 text-base text-zinc-600 dark:text-zinc-400">{recipe.description}</p>
+						</div>
+					</li>
+				))
+			}
+		</ul>
+	</div>
+</BaseLayout>
