@@ -1,3 +1,17 @@
+# [1.19.0](https://github.com/deployn/astro-deploy/compare/v1.18.0...v1.19.0) (2024-03-05)
+
+
+### Bug Fixes
+
+* add source description ([9e7cbd1](https://github.com/deployn/astro-deploy/commit/9e7cbd144f05a2a46e51c033a171fc557951b3eb))
+* **header:** add additional navlink ([54dcefb](https://github.com/deployn/astro-deploy/commit/54dcefbf25002be51b5f134d7a8f74df5ef96474))
+
+
+### Features
+
+* **directus:** use directus cms ([3a9c4da](https://github.com/deployn/astro-deploy/commit/3a9c4da429ce05b320c3c6b63dd3b802d487eac7))
+* use image optimization for Directus ([5cb2237](https://github.com/deployn/astro-deploy/commit/5cb223718734b1d7b502e7dd331eae6ebb493f36))
+
 # [1.18.0](https://github.com/deployn/astro-deploy/compare/v1.17.2...v1.18.0) (2024-03-04)
 
 
