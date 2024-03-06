@@ -1,7 +1,6 @@
 ---
 const { pathname } = Astro.url;
-const { class: className, ...props } = Astro.props;
-const href = props.href;
+const { class: className, href, ...props } = Astro.props;
 const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 ---
 
