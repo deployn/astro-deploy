@@ -1,3 +1,11 @@
+## [1.19.1](https://github.com/deployn/astro-deploy/compare/v1.19.0...v1.19.1) (2024-03-06)
+
+
+### Bug Fixes
+
+* add sitemap link to layout ([38e06ed](https://github.com/deployn/astro-deploy/commit/38e06edcf130473f7c9d60fc6bc7ee2a9b85088c))
+* remove doublicate href ([5ea473e](https://github.com/deployn/astro-deploy/commit/5ea473efdb6bb400c85f98b515ac6d628486fdf3))
+
 # [1.19.0](https://github.com/deployn/astro-deploy/compare/v1.18.0...v1.19.0) (2024-03-05)
 
 
