@@ -1,3 +1,10 @@
+## [1.19.2](https://github.com/deployn/astro-deploy/compare/v1.19.1...v1.19.2) (2024-03-06)
+
+
+### Bug Fixes
+
+* **blog:** add page title to posts ([9c8013c](https://github.com/deployn/astro-deploy/commit/9c8013c08da4efb1fc5b1553f16992b3594d17d6))
+
 ## [1.19.1](https://github.com/deployn/astro-deploy/compare/v1.19.0...v1.19.1) (2024-03-06)
 
 
