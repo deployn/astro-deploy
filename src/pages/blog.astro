@@ -17,7 +17,7 @@ const allBlogposts = await getCollection('blog');
 				allBlogposts.map((post) => (
 					<div class="flex flex-col space-y-4">
 						<h2 class="text-lg font-semibold text-zinc-800 hover:text-zinc-600 dark:text-zinc-200 dark:hover:text-zinc-400 sm:text-xl">
-							<a href={`/blog/${post.slug}`}>{post.data.title}</a>
+							<a href={`/blog/${post.slug}/`}>{post.data.title}</a>
 						</h2>
 						<p class="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
 							{post.data.description}
