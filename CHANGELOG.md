@@ -1,3 +1,10 @@
+## [1.19.4](https://github.com/deployn/astro-deploy/compare/v1.19.3...v1.19.4) (2024-03-07)
+
+
+### Bug Fixes
+
+* **blog:** add trailing slash to bloglist ([76789be](https://github.com/deployn/astro-deploy/commit/76789bebcba6c722071e0e12bbff3fcb2519364e))
+
 ## [1.19.3](https://github.com/deployn/astro-deploy/compare/v1.19.2...v1.19.3) (2024-03-07)
 
 
