@@ -1,3 +1,10 @@
+## [1.19.3](https://github.com/deployn/astro-deploy/compare/v1.19.2...v1.19.3) (2024-03-07)
+
+
+### Bug Fixes
+
+* **header:** update style ([8d2285c](https://github.com/deployn/astro-deploy/commit/8d2285c7357a513be32e92fa2e04138f4ff7c083))
+
 ## [1.19.2](https://github.com/deployn/astro-deploy/compare/v1.19.1...v1.19.2) (2024-03-06)
 
 
