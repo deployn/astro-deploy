@@ -1,3 +1,16 @@
+# [1.21.0](https://github.com/deployn/astro-deploy/compare/v1.20.0...v1.21.0) (2024-03-08)
+
+
+### Bug Fixes
+
+* **blog:** add trailing slash to links ([22f9623](https://github.com/deployn/astro-deploy/commit/22f9623c6256c643dd181f65592aebc4df4c09b2))
+* **blog:** adjust meta description cutting ([e963a3f](https://github.com/deployn/astro-deploy/commit/e963a3f670399195bc506c27806de69820a4fab0))
+
+
+### Features
+
+* **nginx:** add webp to cache control ([521a4ce](https://github.com/deployn/astro-deploy/commit/521a4ce7fd1152c87c44210e8183a31ecd6786e9))
+
 # [1.20.0](https://github.com/deployn/astro-deploy/compare/v1.19.4...v1.20.0) (2024-03-08)
 
 
