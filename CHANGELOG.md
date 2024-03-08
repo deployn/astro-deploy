@@ -1,3 +1,10 @@
+# [1.22.0-beta.1](https://github.com/deployn/astro-deploy/compare/v1.21.0...v1.22.0-beta.1) (2024-03-08)
+
+
+### Features
+
+* add view transitions ([769ccc4](https://github.com/deployn/astro-deploy/commit/769ccc451cdb99d7091d4a8951044b1336426fbe))
+
 # [1.21.0](https://github.com/deployn/astro-deploy/compare/v1.20.0...v1.21.0) (2024-03-08)
 
 
