@@ -143,6 +143,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
+"benefits-of-headless-cms-development-with-directus.mdx": {
+	id: "benefits-of-headless-cms-development-with-directus.mdx";
+  slug: "benefits-of-headless-cms-development-with-directus";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 "comparing-mvc-frameworks.mdx": {
 	id: "comparing-mvc-frameworks.mdx";
   slug: "comparing-mvc-frameworks";
