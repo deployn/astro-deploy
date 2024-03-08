@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/deployn/astro-deploy/compare/v1.19.4...v1.20.0) (2024-03-08)
+
+
+### Features
+
+* add meta description ([5266fe5](https://github.com/deployn/astro-deploy/commit/5266fe563d137febca1937c7a17673ac9749b6a6))
+
 ## [1.19.4](https://github.com/deployn/astro-deploy/compare/v1.19.3...v1.19.4) (2024-03-07)
 
 
