@@ -1,3 +1,11 @@
+# [1.22.0](https://github.com/deployn/astro-deploy/compare/v1.21.0...v1.22.0) (2024-03-08)
+
+
+### Features
+
+* add view transitions ([769ccc4](https://github.com/deployn/astro-deploy/commit/769ccc451cdb99d7091d4a8951044b1336426fbe))
+* **blog:** transition blogpost titles ([aece417](https://github.com/deployn/astro-deploy/commit/aece417bff6717db76e7db95d20f4fe222b3b4eb))
+
 # [1.22.0-beta.2](https://github.com/deployn/astro-deploy/compare/v1.22.0-beta.1...v1.22.0-beta.2) (2024-03-08)
 
 
