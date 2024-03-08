@@ -22,7 +22,7 @@ const components = { table: Table };
 const { title, description } = entry.data;
 
 const descriptionMeta =
-	description.length > 160 ? description.substring(0, 150) + '...' : description;
+	description.length > 158 ? description.substring(0, 155) + '...' : description;
 ---
 
 <BaseLayout title={title} description={descriptionMeta}>
