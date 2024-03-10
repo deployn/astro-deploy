@@ -1,3 +1,11 @@
+# [1.24.0](https://github.com/deployn/astro-deploy/compare/v1.23.1...v1.24.0) (2024-03-10)
+
+
+### Features
+
+* **blog:** add pagination ([e3c5b3f](https://github.com/deployn/astro-deploy/commit/e3c5b3f31fbf622afb31e74c4cf05591371b743b))
+* **pagefind:** add search support to blog ([b18424b](https://github.com/deployn/astro-deploy/commit/b18424b921345f803f3575ebf550c6629c498737))
+
 ## [1.23.1](https://github.com/deployn/astro-deploy/compare/v1.23.0...v1.23.1) (2024-03-10)
 
 
