@@ -29,6 +29,24 @@ const navLinks = [
 		});
 		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 	}
+
+	function setTheme(document) {
+		const theme =
+			localStorage.getItem('theme') ||
+			(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+		document.documentElement.setAttribute('data-theme', theme);
+		if (theme === 'dark') {
+			document.documentElement.classList.add('dark');
+		} else {
+			document.documentElement.classList.remove('dark');
+		}
+	}
+
+	setTheme(document);
+
+	document.addEventListener('astro:before-swap', (ev) => {
+		setTheme(ev.newDocument);
+	});
 </script>
 
 <header
