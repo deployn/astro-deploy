@@ -1,0 +1,109 @@
+---
+title: Getting Started with Astro.js
+description: An introductory guide to Astro.js, setting up your development environment.
+---
+
+Welcome to the world of Astro.js, where building fast, modern websites is more accessible than ever before! Whether you're a seasoned web developer or just dipping your toes into web development, Astro.js offers a unique approach to building websites that are performant, SEO-friendly, and enjoyable to create. In this beginner's guide, we'll walk you through the basics of Astro.js, setting up your development environment, and crafting your first page. Let's dive in!
+
+## Key Takeaways
+
+| Key Points                  | Details                                                                                                                   |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| What is Astro.js?           | A modern frontend framework for building fast, static websites using components from your favorite JavaScript frameworks. |
+| Installation Requirements   | Node.js version 18.14.1 or higher.                                                                                        |
+| Creating Your First Project | Use `npm create astro@latest` command in your terminal.                                                                   |
+| Development Server          | Run `npm start` to launch a local development server.                                                                     |
+| Building Your Site          | Execute `npm run build` to generate a static build of your site.                                                          |
+| Adding Framework Components | Astro supports React, Vue, Svelte, and more with easy integration.                                                        |
+| Styling Options             | Utilize Tailwind CSS, vanilla CSS, or pre-processors like SCSS.                                                           |
+
+Astro.js is designed with performance and developer experience in mind. It allows you to write your UI using components from various frameworks (or none at all!) and render them to static HTML at build time.
+
+## Setting Up Your Development Environment
+
+To get started with Astro.js, you'll need Node.js installed on your computer. If you haven't already, download and install Node.js (version 14.15.0 or higher) from [nodejs.org](https://nodejs.org).
+
+Once Node.js is installed, open your terminal and run the following command to create a new Astro project:
+
+```bash
+npm create astro@latest
+```
+
+Follow the prompts in your terminal to customize your new project.
+
+## Launching Your Development Server
+
+Navigate into your new project directory and start the development server:
+
+```bash
+cd my-astro-project
+npm install
+npm start
+```
+
+This command will compile your project and serve it on a local development server, usually at `http://localhost:4321`. You can view your site by opening this URL in a web browser.
+
+## Building Your First Page
+
+Astro uses a file-based routing system. To create a new page, simply add a `.astro` file in the `src/pages/` directory. Here's a quick example:
+
+**src/pages/index.astro**
+
+```astro
+---
+// Frontmatter script space
+---
+
+<html>
+	<head>
+		<title>My Astro Website</title>
+	</head>
+	<body>
+		<h1>Hello, Astro!</h1>
+	</body>
+</html>
+```
+
+This code defines a basic HTML structure for your home page with a greeting message.
+
+## Adding Components
+
+Astro allows you to integrate components from other frameworks like React or Vue easily. For example, to use React components, first install the necessary dependencies:
+
+```bash
+npx astro add react
+```
+
+Then, you can import React components into your .astro files and use them alongside traditional HTML elements.
+
+**Example:**
+
+```astro
+---
+import MyReactComponent from '../components/MyReactComponent.jsx';
+---
+
+<div>
+	<MyReactComponent />
+</div>
+```
+
+## Styling Your Site
+
+Astro supports various styling options, including Tailwind CSS, which can be easily integrated into your project for rapid styling development.
+
+To add Tailwind CSS, first install the necessary dependencies:
+
+```bash
+npx astro add tailwind
+```
+
+Then follow the setup instructions in the Astro documentation to configure Tailwind CSS for your project.
+
+## Conclusion
+
+Congratulations! You've just set up your development environment and created your first page with Astro.js. From here, you can explore adding more pages, integrating components from your favorite JavaScript frameworks, and experimenting with different styling options to make your website uniquely yours.
+
+Astro.js offers an exciting approach to building modern websites that are optimized for performance right out of the box. With its support for various front-end frameworks and styling solutions, Astro.js provides the flexibility to build websites that meet today's standards for speed, SEO, and user experience.
+
+Start building with Astro.js today and see what you can create!

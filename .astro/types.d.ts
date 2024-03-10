@@ -157,6 +157,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
+"debugging-tips-for-astrojs.mdx": {
+	id: "debugging-tips-for-astrojs.mdx";
+  slug: "debugging-tips-for-astrojs";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 "dockerizing-front-end-development.mdx": {
 	id: "dockerizing-front-end-development.mdx";
   slug: "dockerizing-front-end-development";
@@ -178,9 +185,23 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
+"getting-started-with-astrojs.mdx": {
+	id: "getting-started-with-astrojs.mdx";
+  slug: "getting-started-with-astrojs";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 "modern-web-frameworks-introduction.mdx": {
 	id: "modern-web-frameworks-introduction.mdx";
   slug: "modern-web-frameworks-introduction";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
+"top-10-ides-for-astrojs.mdx": {
+	id: "top-10-ides-for-astrojs.mdx";
+  slug: "top-10-ides-for-astrojs";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
