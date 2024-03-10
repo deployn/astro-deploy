@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/deployn/astro-deploy/compare/v1.22.0...v1.23.0) (2024-03-10)
+
+
+### Features
+
+* **blog:** use expressive code ([4ced8dc](https://github.com/deployn/astro-deploy/commit/4ced8dc0f8baf66402812132b5b1b0cc6d7b96d8))
+
 # [1.22.0](https://github.com/deployn/astro-deploy/compare/v1.21.0...v1.22.0) (2024-03-08)
 
 
