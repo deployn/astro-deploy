@@ -6,49 +6,64 @@ A custom Astro.js template
 
 ## Features
 
-- 🚀 Astro.js 4
-- 🐳 Docker integration
-- 🍃 Tailwind CSS
-- 🖊️ MDX Blog
-- 🐇 Directus CMS support
-- ⚛️ React.js
-- 🏔️ Alpine.js integration
-- 📘 TypeScript
+- 🚀 Astro.js 4 for modern web development.
+- 🐳 Docker integration for consistent environments and easy deployment.
+- 🍃 Tailwind CSS for utility-first styling and rapid UI development.
+- ⚛️ React.js integration, enabling complex UI construction with ease.
+- 🏔️ Alpine.js integration, bringing reactive and declarative magic to your markup.
+- 📘 TypeScript support for safer code through static typing.
+- 🖊️ MDX Blog, allowing JSX in markdown for interactive and dynamic content.
+- 🔖 Frontmatter CMS for easy content management.
+- 🐇 Directus CMS support, providing a headless CMS for flexible content management.
+- ✒️ Expressive Code Blocks, enhancing readability and maintainability of code snippets.
+- 🌓 Dark Mode support, offering seamless user experience between light and dark themes.
+- 🌟 View Transitions, ensuring smooth navigation and enhanced user experience.
+- 🛠 Custom Nginx Configuration, enabling advanced hosting and performance optimizations.
+- 🎨 Shadcn/UI support for crafting beautiful, interactive UI components easily.
+- 🗺 Dynamic Sitemap Generation, boosting SEO by ensuring all pages are discoverable.
+- 📱 PWA Assets Generation for an app-like experience on mobile devices, including offline support.
+- 💅 Prettier integration for consistent code formatting, ensuring a uniform coding style across the project.
 
-## How to use this template
+## Prerequisites
+
+- Node.js (version 20 recommended)
+- Docker (for deployment)
+
+## Getting Started with This Template
 
 ```sh
 git clone https://github.com/deployn/astro-deploy new-astro-project
 cd new-astro-project
 ```
 
-- Update /public/logo.svg
-- Update /public/site.webmanifest
-- Update astro.config.mjs
-- Update colors in tailwind.config.mjs
-- Update /src/\*
+To personalize:
 
-### Directus
+- Replace `/public/logo.svg`
+- Update `/public/site.webmanifest`
+- Configure `astro.config.mjs`
+- Customize colors in `tailwind.config.mjs`
+- Modify content in `/src/\*` as needed
 
-If you don't want to use Directus CMS:
+### Opting Out of Directus
 
-- Delete /src/lib/directus.ts
-- Delete /src/pages/recipes.astro
-- `pnpm remove @directus/sdk`
+If not using Directus CMS:
 
-If you want to use Directus, make sure to grant the view permission to the public for the collection(s) you want to use and `directus_fields` in your Directus dashboard. Adjust the /src/lib/directus for your content.
+- Remove `/src/lib/directus.ts` and `/src/pages/recipes.astro`
+- Run `pnpm remove @directus/sdk`
+
+For Directus usage, ensure public view permission for necessary collections and `directus_fields` via the Directus dashboard and adjust `/src/lib/directus.ts` accordingly.
 
 ### Add shadcn/ui components
 
-Visit <https://ui.shadcn.com/docs/> for a list of components
+Visit <https://ui.shadcn.com/docs/> for component documentation and the list of components
 
 ```sh
 pnpm dlx shadcn-ui@latest add componentName
 ```
 
-### Start the Server
+## Development & Deployment
 
-Development Server:
+### Start the Development Server
 
 ```sh
 npm i -g pnpm
@@ -56,7 +71,7 @@ pnpm install
 pnpm dev
 ```
 
-Production Build:
+### Production Build & Run
 
 ```sh
 sudo docker build . --build-arg SITE_URL=https://example.com --build-arg DIRECTUS_URL=https://example.directus.com -t astro-deploy
@@ -79,7 +94,9 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm run format`          | Formats codebase using Prettier                  |
 | `pnpm run commit`          | Commits changes to version control               |
 
-## Acknowledgements
+## Acknowledgements & Resources
+
+This project draws inspiration and knowledge from a wide array of sources:
 
 - [Astro.js Basic Example](https://github.com/withastro/astro/tree/main/examples/basics)
 - [Astro.js Docs](https://docs.astro.build/)
@@ -99,3 +116,14 @@ All commands are run from the root of the project, from a terminal:
 - [Tailwind CSS Docs](https://tailwindcss.com/docs/)
 - [Typescipt](https://www.typescriptlang.org/)
 - [Visual Studio Code](https://code.visualstudio.com/)
+
+## Contributing
+
+Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue.
+Don't forget to give the project a star! Thanks again!
+
+## Demo
+
+Live Demo: [Astro Deploy](https://astro.deployn.de)
