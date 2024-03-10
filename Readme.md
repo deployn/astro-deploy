@@ -102,6 +102,7 @@ This project draws inspiration and knowledge from a wide array of sources:
 
 - [Astro.js Basic Example](https://github.com/withastro/astro/tree/main/examples/basics)
 - [Astro.js Docs](https://docs.astro.build/)
+- [Astro Cactus](https://github.com/chrismwilliams/astro-theme-cactus)
 - [Astro Starter Kit](https://github.com/zankhq/astro-starter)
 - [Directus](https://directus.io/)
 - [Docker](https://www.docker.com/)
