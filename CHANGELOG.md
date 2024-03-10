@@ -1,3 +1,10 @@
+## [1.24.2](https://github.com/deployn/astro-deploy/compare/v1.24.1...v1.24.2) (2024-03-10)
+
+
+### Bug Fixes
+
+* add margin to recipe site ([02a3b86](https://github.com/deployn/astro-deploy/commit/02a3b86651289c264f3d6827ec6fd989c8aba494))
+
 ## [1.24.1](https://github.com/deployn/astro-deploy/compare/v1.24.0...v1.24.1) (2024-03-10)
 
 
