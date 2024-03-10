@@ -1,3 +1,10 @@
+## [1.24.1](https://github.com/deployn/astro-deploy/compare/v1.24.0...v1.24.1) (2024-03-10)
+
+
+### Bug Fixes
+
+* **blog:** fix pagination for index blog page ([58b63fd](https://github.com/deployn/astro-deploy/commit/58b63fd69cb453f00a4012329547b8c3d7e498e6))
+
 # [1.24.0](https://github.com/deployn/astro-deploy/compare/v1.23.1...v1.24.0) (2024-03-10)
 
 
