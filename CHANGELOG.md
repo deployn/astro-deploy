@@ -1,3 +1,10 @@
+## [1.23.1](https://github.com/deployn/astro-deploy/compare/v1.23.0...v1.23.1) (2024-03-10)
+
+
+### Bug Fixes
+
+* fix darkmode after page transitions ([488fea3](https://github.com/deployn/astro-deploy/commit/488fea300ce3cc5dac625bb3d8f311dca1479b19))
+
 # [1.23.0](https://github.com/deployn/astro-deploy/compare/v1.22.0...v1.23.0) (2024-03-10)
 
 
