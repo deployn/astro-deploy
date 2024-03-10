@@ -25,6 +25,7 @@
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-slot": "^1.0.2",
     "astro": "^4.4.15",
+    "astro-expressive-code": "^0.33.4",
     "astro-icon": "^1.1.0"
   },
   "devDependencies": {

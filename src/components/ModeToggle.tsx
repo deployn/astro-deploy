@@ -22,6 +22,8 @@ export function ModeToggle() {
 			theme === 'dark' ||
 			(theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
 		document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+		// add data-theme="dark" to the html tag
+		document.documentElement.setAttribute('data-theme', isDark ? 'dracula' : 'github-light');
 	}, [theme]);
 
 	return (

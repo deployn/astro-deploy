@@ -4,6 +4,7 @@ import mdx from '@astrojs/mdx';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
+import expressiveCode from 'astro-expressive-code';
 import icon from 'astro-icon';
 const SITE_URL = process.env.SITE_URL || 'https://astro.deployn.de';
 const DIRECTUS_URL = process.env.DIRECTUS_URL || 'https://directus.astro.deployn.de';
@@ -16,6 +17,9 @@ export default defineConfig({
 	},
 	integrations: [
 		alpinejs(),
+		expressiveCode({
+			themes: ['dracula', 'github-light'],
+		}),
 		icon(),
 		mdx(),
 		react(),
