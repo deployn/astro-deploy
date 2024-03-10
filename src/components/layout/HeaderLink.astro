@@ -1,8 +1,15 @@
 ---
 const { pathname } = Astro.url;
 const { class: className = '', href, ...props } = Astro.props;
-const isActive =
-	href === pathname || href === (pathname.endsWith('/') ? pathname.slice(0, -1) : pathname);
+
+function isActiveLink(linkPath: string, currentPath: string) {
+	return (
+		linkPath === currentPath ||
+		linkPath === (currentPath.endsWith('/') ? currentPath.slice(0, -1) : currentPath)
+	);
+}
+
+const isActive = isActiveLink(href, pathname);
 ---
 
 <a
