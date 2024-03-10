@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Heading from '@/components/ui/Heading.astro';
+import Search from '@/components/blog/Search.astro';
 import {
 	Pagination,
 	PaginationContent,
@@ -19,7 +20,7 @@ interface BlogPost {
 	slug: string;
 }
 
-export async function getStaticPaths({ paginate }) {
+export async function getStaticPaths({ paginate }: { paginate: Function }) {
 	const allBlogposts = await getCollection('blog');
 	const postsPerPage = 4;
 
@@ -46,6 +47,7 @@ const {
 	<div class="container mx-auto px-4 py-16 sm:py-24 lg:px-8 lg:py-32 xl:max-w-7xl">
 		<div class="mb-12 text-center text-zinc-900 dark:text-zinc-200">
 			<Heading level={1}>Blog</Heading>
+			<Search />
 			<p>Here are some blogposts, they are located in the repository as mdx files.</p>
 		</div>
 		<hr class="mb-12 dark:border-zinc-700/75" />

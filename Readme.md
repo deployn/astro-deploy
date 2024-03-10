@@ -13,6 +13,8 @@ A custom Astro.js template
 - 🏔️ Alpine.js integration, bringing reactive and declarative magic to your markup.
 - 📘 TypeScript support for safer code through static typing.
 - 🖊️ MDX Blog, allowing JSX in markdown for interactive and dynamic content.
+- 📄 Pagination for easier navigation through content.
+- 🔍 Pagefind for quick and efficient search functionality within the project.
 - 🔖 Frontmatter CMS for easy content management.
 - 🐇 Directus CMS support, providing a headless CMS for flexible content management.
 - ✒️ Expressive Code Blocks, enhancing readability and maintainability of code snippets.
