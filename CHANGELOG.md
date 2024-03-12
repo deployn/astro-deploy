@@ -1,3 +1,11 @@
+## [1.24.3](https://github.com/deployn/astro-deploy/compare/v1.24.2...v1.24.3) (2024-03-12)
+
+
+### Bug Fixes
+
+* **blog:** avoid redirects in pagination ([76d8bec](https://github.com/deployn/astro-deploy/commit/76d8becfb31765546842f77a68458871fc21dddc))
+* **blog:** show page in title ([d0d5552](https://github.com/deployn/astro-deploy/commit/d0d55524bae98becbd9cd16343f6823b2a75745f))
+
 ## [1.24.2](https://github.com/deployn/astro-deploy/compare/v1.24.1...v1.24.2) (2024-03-10)
 
 
