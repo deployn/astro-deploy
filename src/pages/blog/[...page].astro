@@ -79,7 +79,7 @@ const {
 						page.currentPage > 1 && (
 							<>
 								<PaginationItem>
-									<PaginationPrevious href={page.url.prev} />
+									<PaginationPrevious href={`${page.url.prev}/`} />
 								</PaginationItem>
 								<PaginationItem>
 									<PaginationLink href="/blog/">1</PaginationLink>
@@ -88,16 +88,18 @@ const {
 						)
 					}
 					<PaginationItem>
-						<PaginationLink href={page.url.current} isActive>{page.currentPage} </PaginationLink>
+						<PaginationLink href={`${page.url.current}/`} isActive
+							>{page.currentPage}
+						</PaginationLink>
 					</PaginationItem>
 					{
 						page.currentPage < page.lastPage && (
 							<>
 								<PaginationItem>
-									<PaginationLink href={`/blog/${page.lastPage}`}>{page.lastPage}</PaginationLink>
+									<PaginationLink href={`/blog/${page.lastPage}/`}>{page.lastPage}</PaginationLink>
 								</PaginationItem>
 								<PaginationItem>
-									<PaginationNext href={page.url.next} />
+									<PaginationNext href={`${page.url.next}/`} />
 								</PaginationItem>
 							</>
 						)
