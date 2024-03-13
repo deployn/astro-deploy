@@ -1,3 +1,10 @@
+## [1.24.4](https://github.com/deployn/astro-deploy/compare/v1.24.3...v1.24.4) (2024-03-13)
+
+
+### Bug Fixes
+
+* **index:** fix sidescroll ([d7ba632](https://github.com/deployn/astro-deploy/commit/d7ba632d5d7339753f25bfb4ec16b13b950caa81))
+
 ## [1.24.3](https://github.com/deployn/astro-deploy/compare/v1.24.2...v1.24.3) (2024-03-12)
 
 
