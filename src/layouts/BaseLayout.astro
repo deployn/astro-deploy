@@ -7,17 +7,24 @@ import Footer from '@/components/layout/Footer.astro';
 interface Props {
 	title: string;
 	description: string;
+	lang?: string;
+	index?: boolean;
+	follow?: boolean;
 }
-const { title, description } = Astro.props as Props;
+const { title, description, lang = 'en', index, follow } = Astro.props as Props;
 ---
 
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<title>{title}</title>
 		<meta name="description" content={description} />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#61a8e1" />
+		<meta
+			name="robots"
+			content={`${index ? 'index' : 'noindex'}, ${follow ? 'follow' : 'nofollow'}`}
+		/>
 		<link rel="icon" href="/favicon.ico" sizes="48x48" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" />
 		<link rel="manifest" href="/site.webmanifest" />
