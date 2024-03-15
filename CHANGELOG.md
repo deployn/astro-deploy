@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/deployn/astro-deploy/compare/v1.24.4...v1.25.0) (2024-03-15)
+
+
+### Features
+
+* **layout:** add noindex, nofollow options ([1730207](https://github.com/deployn/astro-deploy/commit/1730207b88eff59f9866339d66c34a905164ec45))
+
 ## [1.24.4](https://github.com/deployn/astro-deploy/compare/v1.24.3...v1.24.4) (2024-03-13)
 
 
