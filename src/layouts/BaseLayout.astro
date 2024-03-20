@@ -8,10 +8,10 @@ interface Props {
 	title: string;
 	description: string;
 	lang?: string;
-	index?: boolean;
-	follow?: boolean;
+	noindex?: boolean;
+	nofollow?: boolean;
 }
-const { title, description, lang = 'en', index, follow } = Astro.props as Props;
+const { title, description, lang = 'en', noindex, nofollow } = Astro.props as Props;
 ---
 
 <html lang={lang}>
@@ -23,7 +23,7 @@ const { title, description, lang = 'en', index, follow } = Astro.props as Props;
 		<meta name="theme-color" content="#61a8e1" />
 		<meta
 			name="robots"
-			content={`${index ? 'index' : 'noindex'}, ${follow ? 'follow' : 'nofollow'}`}
+			content={`${noindex ? 'noindex' : 'index'}, ${nofollow ? 'nofollow' : 'follow'}`}
 		/>
 		<link rel="icon" href="/favicon.ico" sizes="48x48" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" />
