@@ -1,3 +1,10 @@
+## [1.25.1](https://github.com/deployn/astro-deploy/compare/v1.25.0...v1.25.1) (2024-03-20)
+
+
+### Bug Fixes
+
+* **layout:** Change default index and follow behavior ([63c4358](https://github.com/deployn/astro-deploy/commit/63c435809e64cfa7ef6ac66201cf1799194b7795))
+
 # [1.25.0](https://github.com/deployn/astro-deploy/compare/v1.24.4...v1.25.0) (2024-03-15)
 
 
