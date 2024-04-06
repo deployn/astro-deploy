@@ -1,3 +1,12 @@
+## [1.25.2](https://github.com/deployn/astro-deploy/compare/v1.25.1...v1.25.2) (2024-04-06)
+
+
+### Bug Fixes
+
+* **footer:** update footer ([96595ff](https://github.com/deployn/astro-deploy/commit/96595ff3d12407a32fe863cb7244dfcef3e8a136))
+* **header:** remove logic to open menu automatically on wider screens ([7d7ee86](https://github.com/deployn/astro-deploy/commit/7d7ee869aea6b93c70e09f348f3e8c689abcbee6))
+* **header:** update header ([10b42cd](https://github.com/deployn/astro-deploy/commit/10b42cd2ff717aa7896416989a89aac383482021))
+
 ## [1.25.1](https://github.com/deployn/astro-deploy/compare/v1.25.0...v1.25.1) (2024-03-20)
 
 
