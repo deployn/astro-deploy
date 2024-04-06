@@ -14,21 +14,20 @@ import index5 from '@/assets/images/index-5.png';
 <BaseLayout
 	title="Astro Deploy"
 	description="Launch your site with Astro Deploy: A cutting-edge solution featuring Astro.js, Docker, and Tailwind CSS for seamless, scalable web development.">
-	<div class="mx-auto px-4 pb-20 pt-28 sm:px-6 lg:px-8">
+	<header class="mx-auto px-4 pb-20 pt-28 sm:px-6 lg:px-8">
 		<Heading level={1} classes="text-center text-zinc-900 dark:text-zinc-200">
 			Deploy Your
 			<span
 				class="bg-gradient-to-r from-accent-600 via-accent-600 to-zinc-900 bg-clip-text text-transparent dark:from-accent dark:to-zinc-200">
 				Astro.js
 			</span>
-			Site!</Heading
-		>
-
+			Site!
+		</Heading>
 		<p class="mx-auto mt-6 max-w-3xl text-center text-lg text-zinc-900/70 dark:text-zinc-400">
 			Supercharge your website with the Astro Deploy boilerplate with Docker support for
 			out-of-this-world web experiences. Launch today!
 		</p>
-		<div class="mt-8 grid w-full gap-3 sm:inline-flex sm:justify-center">
+		<div class="mt-8 flex justify-center">
 			<a
 				href="https://github.com/deployn/astro-deploy"
 				class="inline-flex items-center justify-center gap-x-3 rounded-full bg-primary-600 px-8 py-4 text-center text-base text-sm font-medium ring-4 ring-transparent focus:outline-none focus:ring-2 focus:ring-primary-700 focus:ring-offset-base-50 dark:focus:ring-offset-zinc-800">
@@ -36,8 +35,9 @@ import index5 from '@/assets/images/index-5.png';
 				<Icon name="line-md:chevron-right" class="size-3" />
 			</a>
 		</div>
-	</div>
-	<div
+	</header>
+
+	<section
 		class="mx-auto max-w-6xl px-8 py-12 text-base-900 dark:text-base-100 sm:px-6 lg:px-8 lg:py-16">
 		<Heading
 			level={2}
@@ -48,106 +48,117 @@ import index5 from '@/assets/images/index-5.png';
 			Empower your success with Astro Deploy. Leverage cutting-edge technologies for seamless
 			experiences.
 		</p>
-	</div>
-	<div
-		class="mx-auto flex max-w-7xl flex-col items-center gap-x-12 gap-y-8 px-8 py-16 lg:flex-row lg:py-24">
-		<div class="lg:flex-1">
-			<Image
-				class="mx-auto max-h-96 w-full rounded-xl shadow-lg"
-				src={index1}
-				alt="Abstract Tech"
-			/>
+	</section>
+
+	<section class="mx-auto max-w-7xl px-8 py-16 lg:py-24">
+		<div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24">
+			<div class="flex items-center justify-center">
+				<Image
+					class="mx-auto max-h-96 w-full rounded-xl shadow-lg"
+					src={index1}
+					alt="Abstract Tech"
+				/>
+			</div>
+			<div class="flex flex-col gap-y-4">
+				<h2 class="text-center text-3xl font-bold text-zinc-900 dark:text-zinc-100 lg:text-left">
+					Revolutionize Website Development
+				</h2>
+				<p class="text-lg text-zinc-800 dark:text-zinc-300">
+					Astro Deploy revolutionizes development with Astro.js 4 and Docker for scalable solutions.
+				</p>
+			</div>
 		</div>
-		<div class="flex flex-col gap-y-4 lg:flex-1">
-			<h2 class="text-center text-3xl font-bold text-zinc-900 dark:text-zinc-100 lg:text-left">
-				Revolutionize Website Development
-			</h2>
-			<p class="text-lg text-zinc-800 dark:text-zinc-300">
-				Astro Deploy revolutionizes development with Astro.js 4 and Docker for scalable solutions.
-			</p>
+	</section>
+
+	<section class="mx-auto max-w-7xl px-8 py-16 lg:py-24">
+		<div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24">
+			<div class="flex items-center justify-center lg:order-2">
+				<Image
+					class="mx-auto max-h-96 w-full rounded-xl shadow-lg"
+					src={index2}
+					alt="Abstract Tech"
+				/>
+			</div>
+			<div class="flex flex-col gap-y-4 lg:order-1">
+				<h2 class="text-center text-3xl font-bold text-zinc-900 dark:text-zinc-100 lg:text-left">
+					Accelerate Website Development with Astro Deploy
+				</h2>
+				<p class="text-lg text-zinc-800 dark:text-zinc-300">
+					Astro Deploy expedites website development with pre-configured Astro.js boilerplate,
+					Docker, and Tailwind CSS, enabling businesses to launch their online presence swiftly and
+					engage customers effectively.
+				</p>
+			</div>
 		</div>
-	</div>
-	<div
-		class="mx-auto flex max-w-7xl flex-col items-center gap-x-12 gap-y-8 px-8 py-16 lg:flex-row-reverse lg:py-24">
-		<div class="lg:flex-1">
-			<Image
-				class="mx-auto max-h-96 w-full rounded-xl shadow-lg"
-				src={index2}
-				alt="Abstract Tech"
-			/>
+	</section>
+
+	<section class="mx-auto max-w-7xl px-8 py-16 lg:py-24">
+		<div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24">
+			<div class="flex items-center justify-center">
+				<Image
+					class="mx-auto max-h-96 w-full rounded-xl shadow-lg"
+					src={index3}
+					alt="Abstract Tech"
+				/>
+			</div>
+			<div class="flex flex-col gap-y-4">
+				<h2 class="text-center text-3xl font-bold text-zinc-900 dark:text-zinc-100 lg:text-left">
+					Docker Integration
+				</h2>
+				<p class="text-lg text-zinc-800 dark:text-zinc-300">
+					The Docker integration ensures smooth deployment and scalability of your Astro.js 4
+					project. Embrace containerization technology to streamline your development process and
+					enhance efficiency.
+				</p>
+			</div>
 		</div>
-		<div class="flex flex-col gap-y-4 lg:flex-1">
-			<h2 class="text-center text-3xl font-bold text-zinc-900 dark:text-zinc-100 lg:text-left">
-				Accelerate Website Development with Astro Deploy
-			</h2>
-			<p class="text-lg text-zinc-800 dark:text-zinc-300">
-				Astro Deploy expedites website development with pre-configured Astro.js boilerplate, Docker,
-				and Tailwind CSS, enabling businesses to launch their online presence swiftly and engage
-				customers effectively.
-			</p>
+	</section>
+
+	<section class="mx-auto max-w-7xl px-8 py-16 lg:py-24">
+		<div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24">
+			<div class="flex items-center justify-center lg:order-2">
+				<Image
+					class="mx-auto max-h-96 w-full rounded-xl shadow-lg"
+					src={index4}
+					alt="Abstract Tech"
+				/>
+			</div>
+			<div class="flex flex-col gap-y-4 lg:order-1">
+				<h2 class="text-center text-3xl font-bold text-zinc-900 dark:text-zinc-100 lg:text-left">
+					Tailwind CSS Styling
+				</h2>
+				<p class="text-lg text-zinc-800 dark:text-zinc-300">
+					Utilizing the power of Tailwind CSS, crafting visually appealing designs that are
+					responsive and user-friendly. Bring your vision to life with customizable styles that
+					reflect your brand identity.
+				</p>
+			</div>
 		</div>
-	</div>
-	<div
-		class="mx-auto flex max-w-7xl flex-col items-center gap-x-12 gap-y-8 px-8 py-16 lg:flex-row lg:py-24">
-		<div class="lg:flex-1">
-			<Image
-				class="mx-auto max-h-96 w-full rounded-xl shadow-lg"
-				src={index3}
-				alt="Abstract Tech"
-			/>
+	</section>
+
+	<section class="mx-auto max-w-7xl px-8 py-16 lg:py-24">
+		<div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24">
+			<div class="flex items-center justify-center">
+				<Image
+					class="mx-auto max-h-96 w-full rounded-xl shadow-lg"
+					src={index5}
+					alt="Abstract Tech"
+				/>
+			</div>
+			<div class="flex flex-col gap-y-4">
+				<h2 class="text-center text-3xl font-bold text-zinc-900 dark:text-zinc-100 lg:text-left">
+					MDX Blog Setup
+				</h2>
+				<p class="text-lg text-zinc-800 dark:text-zinc-300">
+					Enhance your website's content management capabilities with MDX Blog integration. Set up
+					an MDX-powered blog for seamless content creation and management, empowering you to engage
+					your audience effectively.
+				</p>
+			</div>
 		</div>
-		<div class="flex flex-col gap-y-4 lg:flex-1">
-			<h2 class="text-center text-3xl font-bold text-zinc-900 dark:text-zinc-100 lg:text-left">
-				Docker Integration
-			</h2>
-			<p class="text-lg text-zinc-800 dark:text-zinc-300">
-				Te Docker integration ensures smooth deployment and scalability of your Astro.js 4 project.
-				Embrace containerization technology to streamline your development process and enhance
-				efficiency.
-			</p>
-		</div>
-	</div>
-	<div
-		class="mx-auto flex max-w-7xl flex-col items-center gap-x-12 gap-y-8 px-8 py-16 lg:flex-row-reverse lg:py-24">
-		<div class="lg:flex-1">
-			<Image
-				class="mx-auto max-h-96 w-full rounded-xl shadow-lg"
-				src={index4}
-				alt="Abstract Tech"
-			/>
-		</div>
-		<div class="flex flex-col gap-y-4 lg:flex-1">
-			<h2 class="text-center text-3xl font-bold text-zinc-900 dark:text-zinc-100 lg:text-left">
-				Tailwind CSS Styling
-			</h2>
-			<p class="text-lg text-zinc-800 dark:text-zinc-300">
-				Utilizing the power of Tailwind CSS, crafting visually appealing designs that are responsive
-				and user-friendly. Bring your vision to life with customizable styles that reflect your
-				brand identity.
-			</p>
-		</div>
-	</div>
-	<div
-		class="mx-auto flex max-w-7xl flex-col items-center gap-x-12 gap-y-8 px-8 py-16 lg:flex-row lg:py-24">
-		<div class="lg:flex-1">
-			<Image
-				class="mx-auto max-h-96 w-full rounded-xl shadow-lg"
-				src={index5}
-				alt="Abstract Tech"
-			/>
-		</div>
-		<div class="flex flex-col gap-y-4 lg:flex-1">
-			<h2 class="text-center text-3xl font-bold text-zinc-900 dark:text-zinc-100 lg:text-left">
-				MDX Blog Setup
-			</h2>
-			<p class="text-lg text-zinc-800 dark:text-zinc-300">
-				Enhance your website's content management capabilities with MDX Blog integration. Set up an
-				MDX-powered blog for seamless content creation and management, empowering you to engage your
-				audience effectively.
-			</p>
-		</div>
-	</div>
-	<div class="container relative mx-auto px-4 py-16 lg:px-8 lg:py-32 xl:max-w-6xl">
+	</section>
+
+	<section class="container relative mx-auto px-4 py-16 lg:px-8 lg:py-32 xl:max-w-6xl">
 		<div
 			class="absolute inset-0 my-6 rounded bg-gray-800 lg:-skew-y-1 xl:-mx-2 xl:my-20 xl:rotate-2">
 		</div>
@@ -157,19 +168,20 @@ import index5 from '@/assets/images/index-5.png';
 		<div
 			class="absolute -left-6 top-2 size-16 rotate-45 -skew-y-3 bg-primary-600 transition-all duration-500 hover:rounded-3xl xl:top-12">
 		</div>
-		<div class="relative flex flex-col items-center space-y-8 md:flex-row md:space-y-0">
-			<div class="py-5 text-center md:w-7/12 md:p-5 md:text-left">
+
+		<div class="relative flex flex-col items-center gap-8 md:flex-row md:gap-16">
+			<div class="text-center md:w-7/12 md:text-left">
 				<h2 class="mb-4 text-4xl font-black text-white">Deploy your site</h2>
-				<h3 class="text-xl leading-relaxed text-gray-300">Start building amazing sites, today.</h3>
+				<p class="text-xl leading-relaxed text-gray-300">Start building amazing sites, today.</p>
 			</div>
-			<div class="grow md:p-5 md:text-center">
+			<div class="flex justify-center md:w-5/12">
 				<a
 					href="https://github.com/deployn/astro-deploy"
-					class="inline-flex items-center justify-center space-x-2 rounded-full border border-primary-700 bg-primary-700 px-8 py-4 font-semibold leading-6 text-white hover:border-primary-600 hover:bg-primary-600 hover:text-white focus:ring focus:ring-primary-400 focus:ring-opacity-50 active:border-primary-700 active:bg-primary-700">
+					class="inline-flex items-center justify-center gap-2 rounded-full border border-primary-700 bg-primary-700 px-8 py-4 font-semibold leading-6 text-white hover:border-primary-600 hover:bg-primary-600 focus:ring focus:ring-primary-400 focus:ring-opacity-50 active:border-primary-700 active:bg-primary-700">
 					<span>Get Started</span>
 					<Icon name="line-md:chevron-right" class="size-3" />
 				</a>
 			</div>
 		</div>
-	</div>
+	</section>
 </BaseLayout>
