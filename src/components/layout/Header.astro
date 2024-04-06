@@ -51,11 +51,11 @@ const navLinks = [
 
 <header
 	x-data={`{
-    open: window.innerWidth < 640 ? false : true,
+    open: false,
     windowWidth: window.innerWidth,
     init() {
         this.$watch('windowWidth', value => {
-            this.open = value < 640 ? false : true;
+            this.open = false;
         });
         window.addEventListener('resize', () => {
             this.$nextTick(() => {
