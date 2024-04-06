@@ -1,3 +1,10 @@
+## [1.25.3](https://github.com/deployn/astro-deploy/compare/v1.25.2...v1.25.3) (2024-04-06)
+
+
+### Bug Fixes
+
+* **index:** update index page ([665da2a](https://github.com/deployn/astro-deploy/commit/665da2a1a6572af3da63a6c584a3dcb17f781f89))
+
 ## [1.25.2](https://github.com/deployn/astro-deploy/compare/v1.25.1...v1.25.2) (2024-04-06)
 
 
