@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+	title: string;
+	description: string;
+	image: ImageMetadata;
+	isReversed?: boolean;
+}
+
+const { title, description, image, isReversed = false } = Astro.props;
+---
+
+<section class="mx-auto max-w-7xl px-8 py-16 lg:py-24">
+	<div
+		class={`grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24 ${isReversed ? 'lg:flex-row-reverse' : ''}`}>
+		<div class={`flex items-center justify-center ${isReversed ? 'lg:order-2' : ''}`}>
+			<Image class="mx-auto max-h-96 w-full rounded-xl shadow-lg" src={image} alt={title} />
+		</div>
+		<div class={`flex flex-col gap-y-4 ${isReversed ? 'lg:order-1' : ''}`}>
+			<h2 class="text-center text-3xl font-bold text-zinc-900 dark:text-zinc-100 lg:text-left">
+				{title}
+			</h2>
+			<p class="text-lg text-zinc-800 dark:text-zinc-300">
+				{description}
+			</p>
+		</div>
+	</div>
+</section>
