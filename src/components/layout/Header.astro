@@ -10,17 +10,24 @@ const navLinks = [
 	{ href: '/blog/', label: 'Blog' },
 	{ href: '/recipes/', label: 'Recipes' },
 ];
+
+const getThemePreference = () => {
+	if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+		return localStorage.getItem('theme');
+	}
+	return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+};
+
+const setTheme = (document: Document) => {
+	const theme = getThemePreference();
+	document.documentElement.setAttribute('data-theme', theme ?? '');
+	document.documentElement.classList.toggle('dark', theme === 'dark');
+};
 ---
 
-<script is:inline>
-	const getThemePreference = () => {
-		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-			return localStorage.getItem('theme');
-		}
-		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-	};
+<script define:vars={{ setTheme }} is:inline>
 	const isDark = getThemePreference() === 'dark';
-	document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+	document.documentElement.classList.toggle('dark', isDark);
 
 	if (typeof localStorage !== 'undefined') {
 		const observer = new MutationObserver(() => {
@@ -28,18 +35,6 @@ const navLinks = [
 			localStorage.setItem('theme', isDark ? 'dark' : 'light');
 		});
 		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-	}
-
-	function setTheme(document) {
-		const theme =
-			localStorage.getItem('theme') ||
-			(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-		document.documentElement.setAttribute('data-theme', theme);
-		if (theme === 'dark') {
-			document.documentElement.classList.add('dark');
-		} else {
-			document.documentElement.classList.remove('dark');
-		}
 	}
 
 	setTheme(document);
@@ -51,19 +46,19 @@ const navLinks = [
 
 <header
 	x-data={`{
-    open: false,
-    windowWidth: window.innerWidth,
-    init() {
-        this.$watch('windowWidth', value => {
-            this.open = false;
-        });
-        window.addEventListener('resize', () => {
-            this.$nextTick(() => {
-                this.windowWidth = window.innerWidth;
-            });
-        });
-    }
-}`}
+		open: false,
+		windowWidth: window.innerWidth,
+		init() {
+			this.$watch('windowWidth', () => {
+				this.open = false;
+			});
+			window.addEventListener('resize', () => {
+				this.$nextTick(() => {
+					this.windowWidth = window.innerWidth;
+				});
+			});
+		}
+	}`}
 	x-init="init()"
 	class="sticky top-0 z-10 block h-max w-full max-w-full rounded-none border border-white/80 bg-opacity-80 px-4 py-2 text-black shadow-md backdrop-blur-2xl backdrop-saturate-200 dark:border-black/80 dark:bg-zinc-900 lg:px-8 lg:py-4">
 	<div class="flex items-center justify-between text-zinc-900 dark:text-zinc-100">
@@ -80,20 +75,18 @@ const navLinks = [
 				Astro Deploy
 			</div>
 		</a>
-		<div class="hidden sm:block">
-			<nav
-				class="mb-6 mt-4 flex min-w-60 flex-col gap-1 p-0 font-sans text-base font-normal text-zinc-700 dark:text-zinc-300 sm:mb-0 sm:mt-0 sm:flex-row sm:p-1">
-				{
-					navLinks.map(({ href, label }) => (
-						<HeaderLink
-							href={href}
-							class="block w-full rounded-lg px-4 py-2 text-center font-sans text-sm leading-normal text-zinc-900 antialiased transition-all hover:bg-zinc-50 dark:text-zinc-100 dark:hover:bg-zinc-950 md:text-xl">
-							{label}
-						</HeaderLink>
-					))
-				}
-			</nav>
-		</div>
+		<nav
+			class="mb-6 mt-4 hidden min-w-60 flex-col gap-1 p-0 font-sans text-base font-normal text-zinc-700 dark:text-zinc-300 sm:mb-0 sm:mt-0 sm:flex sm:flex-row sm:p-1">
+			{
+				navLinks.map(({ href, label }) => (
+					<HeaderLink
+						href={href}
+						class="block w-full rounded-lg px-4 py-2 text-center font-sans text-sm leading-normal text-zinc-900 antialiased transition-all hover:bg-zinc-50 dark:text-zinc-100 dark:hover:bg-zinc-950 md:text-xl">
+						{label}
+					</HeaderLink>
+				))
+			}
+		</nav>
 		<div class="flex">
 			<button
 				class="relative h-10 w-10 text-gray-500 focus:outline-none sm:hidden"
@@ -110,7 +103,7 @@ const navLinks = [
 					<span
 						aria-hidden="true"
 						class="absolute block h-0.5 w-5 transform bg-current transition duration-200 ease-in-out"
-						:class="{'opacity-0': open } ">
+						:class="{'opacity-0': open }">
 					</span>
 					<span
 						aria-hidden="true"
@@ -122,27 +115,25 @@ const navLinks = [
 			<ModeToggle client:load />
 		</div>
 	</div>
-	<div class="block w-full basis-full overflow-hidden sm:hidden">
-		<nav
-			id="menu"
-			:class="{'flex': open, 'hidden': !open}"
-			x-show="open"
-			x-transition:enter="transition ease-out duration-200"
-			x-transition:enter-start="opacity-0 transform scale-90"
-			x-transition:enter-end="opacity-100 transform scale-100"
-			x-transition:leave="transition ease-in duration-200"
-			x-transition:leave-start="opacity-100 transform scale-100"
-			x-transition:leave-end="opacity-0 transform scale-90"
-			class="mb-6 mt-4 hidden min-w-60 flex-col gap-1 p-0 font-sans text-base font-normal text-zinc-700 dark:text-zinc-300 sm:mb-0 sm:mt-0 sm:block sm:flex-row sm:p-1">
-			{
-				navLinks.map(({ href, label }) => (
-					<HeaderLink
-						href={href}
-						class="flex w-full items-center gap-2 rounded-lg p-3 py-2 pr-4 text-start font-sans text-sm font-medium leading-tight text-zinc-900 antialiased outline-none transition-all hover:bg-zinc-50 hover:bg-opacity-80 hover:text-zinc-900 focus:bg-zinc-50 focus:bg-opacity-80 focus:text-zinc-900 active:bg-zinc-50 active:bg-opacity-80 active:text-zinc-900 dark:text-zinc-100">
-						{label}
-					</HeaderLink>
-				))
-			}
-		</nav>
-	</div>
+	<nav
+		id="menu"
+		:class="{'flex': open, 'hidden': !open}"
+		x-show="open"
+		x-transition:enter="transition ease-out duration-200"
+		x-transition:enter-start="opacity-0 transform scale-90"
+		x-transition:enter-end="opacity-100 transform scale-100"
+		x-transition:leave="transition ease-in duration-200"
+		x-transition:leave-start="opacity-100 transform scale-100"
+		x-transition:leave-end="opacity-0 transform scale-90"
+		class="mb-6 mt-4 hidden min-w-60 flex-col gap-1 p-0 font-sans text-base font-normal text-zinc-700 dark:text-zinc-300 sm:mb-0 sm:mt-0 sm:hidden sm:flex-row sm:p-1">
+		{
+			navLinks.map(({ href, label }) => (
+				<HeaderLink
+					href={href}
+					class="flex w-full items-center gap-2 rounded-lg p-3 py-2 pr-4 text-start font-sans text-sm font-medium leading-tight text-zinc-900 antialiased outline-none transition-all hover:bg-zinc-50 hover:bg-opacity-80 hover:text-zinc-900 focus:bg-zinc-50 focus:bg-opacity-80 focus:text-zinc-900 active:bg-zinc-50 active:bg-opacity-80 active:text-zinc-900 dark:text-zinc-100">
+					{label}
+				</HeaderLink>
+			))
+		}
+	</nav>
 </header>
