@@ -2,21 +2,37 @@
 import { Icon } from 'astro-icon/components';
 ---
 
-<div class="mx-auto w-full max-w-7xl px-8">
-	<div
-		class="flex flex-col items-center justify-center border-t border-zinc-50 py-4 dark:border-zinc-900 md:flex-row md:justify-between">
-		<p
-			class="mb-4 text-center text-sm font-normal text-zinc-900 antialiased dark:text-zinc-100 md:mb-0">
-			© 2024
-			<a href="/" class="hover:text-blue-500">Astro Deploy</a>. All Rights Reserved.
-		</p>
-		<div class="flex gap-4 text-zinc-900 dark:text-zinc-100 sm:justify-center">
-			<a
-				href="https://github.com/deployn/astro-deploy"
-				class="block text-base font-light leading-relaxed text-inherit antialiased opacity-80 transition-opacity hover:opacity-100"
-				aria-label="GitHub Repository">
-				<Icon name="line-md:github" class="size-5" fill="currentColor" aria-hidden="true" />
-			</a>
+<footer class="bg-gray-100 py-12 dark:bg-gray-800">
+	<div class="mx-auto w-full max-w-7xl px-8">
+		<div class="flex flex-col items-center justify-between gap-8 md:flex-row">
+			<div>
+				<p
+					class="mb-2 text-center text-base font-normal text-zinc-900 antialiased dark:text-zinc-100 md:text-left">
+					© 2024
+					<a href="/" class="hover:text-blue-500">Astro Deploy</a>. All Rights Reserved.
+				</p>
+				<nav class="flex flex-wrap justify-center gap-4 md:justify-start">
+					<a href="/sitemap-index.xml" class="text-zinc-900 hover:text-blue-500 dark:text-zinc-100">
+						Sitemap
+					</a>
+				</nav>
+			</div>
+			<div class="flex flex-col items-center gap-4 md:flex-row">
+				<div class="flex gap-4 text-zinc-900 dark:text-zinc-100">
+					<a
+						href="mailto:astro@deployn.de"
+						class="block text-base font-light leading-relaxed text-inherit antialiased opacity-80 transition-opacity hover:opacity-100"
+						aria-label="Email">
+						<Icon name="line-md:email" class="size-5" fill="currentColor" aria-hidden="true" />
+					</a>
+					<a
+						href="https://github.com/deployn/astro-deploy"
+						class="block text-base font-light leading-relaxed text-inherit antialiased opacity-80 transition-opacity hover:opacity-100"
+						aria-label="GitHub Repository">
+						<Icon name="line-md:github" class="size-5" fill="currentColor" aria-hidden="true" />
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
+</footer>
