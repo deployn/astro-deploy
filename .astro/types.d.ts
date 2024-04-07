@@ -192,6 +192,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
+"mastering-markdown.mdx": {
+	id: "mastering-markdown.mdx";
+  slug: "mastering-markdown";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 "modern-web-frameworks-introduction.mdx": {
 	id: "modern-web-frameworks-introduction.mdx";
   slug: "modern-web-frameworks-introduction";
@@ -223,5 +230,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("./../src/content/config.js");
+	export type ContentConfig = typeof import("../src/content/config.js");
 }
