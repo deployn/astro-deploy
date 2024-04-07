@@ -1,0 +1,18 @@
+.prose {
+	@apply break-words;
+	@apply prose-a:text-primary-600 prose-a:underline prose-a:transition prose-a:duration-150 prose-a:ease-in-out prose-a:hover:text-primary-500 prose-a:focus:outline-none prose-a:focus:ring-2 prose-a:focus:ring-primary-500 prose-a:dark:text-primary-400 prose-a:dark:hover:text-primary-300;
+	@apply prose-ul:mb-4 prose-ul:ml-8;
+	@apply prose-ol:mb-4 prose-ol:ml-8;
+	@apply prose-li:mb-2;
+	@apply prose-code:rounded prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:text-sm prose-code:text-base-600 prose-code:dark:bg-gray-800 prose-code:dark:text-base-400;
+	code::before {
+		content: '';
+	}
+	code::after {
+		content: '';
+	}
+	pre code {
+		@apply block overflow-auto rounded bg-gray-800 p-4 text-white;
+	}
+	@apply prose-blockquote:my-4 prose-blockquote:border-l-4 prose-blockquote:border-secondary-300 prose-blockquote:pl-4 prose-blockquote:dark:border-secondary-600;
+}
