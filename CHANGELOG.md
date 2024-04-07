@@ -1,3 +1,10 @@
+# [1.26.0](https://github.com/deployn/astro-deploy/compare/v1.25.3...v1.26.0) (2024-04-07)
+
+
+### Features
+
+* **blog:** add custom prose styling ([9a6ad69](https://github.com/deployn/astro-deploy/commit/9a6ad6937800c5b65f7c4b231eff07704f59153b))
+
 ## [1.25.3](https://github.com/deployn/astro-deploy/compare/v1.25.2...v1.25.3) (2024-04-06)
 
 
