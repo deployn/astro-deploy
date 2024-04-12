@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/deployn/astro-deploy/compare/v1.26.0...v1.27.0) (2024-04-12)
+
+
+### Features
+
+* **blog:** add additional frontmatter fields for dates, authors, image, draft ([6c81e94](https://github.com/deployn/astro-deploy/commit/6c81e942a6f78f999a81410c2e1494c0b72a58a7))
+
 # [1.26.0](https://github.com/deployn/astro-deploy/compare/v1.25.3...v1.26.0) (2024-04-07)
 
 
