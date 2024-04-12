@@ -4,13 +4,16 @@ import type { CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Table from '@/components/blog/Table.astro';
 import '@/styles/prose.css';
+import { Image } from 'astro:assets';
 
 export async function getStaticPaths() {
 	const blogEntries = await getCollection('blog');
-	return blogEntries.map((entry) => ({
-		params: { slug: entry.slug },
-		props: { entry },
-	}));
+	return blogEntries
+		.filter((entry) => !entry.data.isDraft)
+		.map((entry) => ({
+			params: { slug: entry.slug },
+			props: { entry },
+		}));
 }
 
 interface Props {
@@ -20,7 +23,23 @@ interface Props {
 const { entry } = Astro.props as Props;
 const { Content } = await entry.render();
 const components = { table: Table };
-const { title, description } = entry.data;
+const {
+	title = '',
+	description = '',
+	author = [],
+	datePublished = '',
+	dateModified = '',
+	image = '',
+} = entry.data;
+
+const formatDate = (dateString: string) => {
+	const date = new Date(dateString);
+	return date.toLocaleDateString('en-US', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+	});
+};
 
 const descriptionMeta =
 	description.length > 158 ? description.substring(0, 155) + '...' : description;
@@ -30,7 +49,51 @@ const descriptionMeta =
 	<div
 		class="container prose mx-auto px-4 py-16 dark:prose-invert lg:px-8 lg:py-32 xl:max-w-7xl"
 		data-pagefind-body>
-		<h1 transition:name={title} class="text-4xl font-bold">{title}</h1>
-		<Content components={components} />
+		<h1 class="text-4xl font-bold">{title}</h1>
+		<div class="mt-2 text-sm text-gray-600">
+			{
+				author.length > 0 && (
+					<span>
+						By{' '}
+						{author.map((a, index) => (
+							<span>
+								{a.url ? (
+									<a href={a.url} target="_blank" rel="noopener noreferrer">
+										{a.name}
+									</a>
+								) : (
+									a.name
+								)}
+								{index < author.length - 1 ? ', ' : ''}
+							</span>
+						))}
+					</span>
+				)
+			}
+			{
+				datePublished && (
+					<span class="ml-2">Published on {formatDate(datePublished.toString())}</span>
+				)
+			}
+			{
+				dateModified && (
+					<span class="ml-2">Last updated on {formatDate(dateModified.toString())}</span>
+				)
+			}
+		</div>
+		{
+			image && (
+				<Image
+					src={image as unknown as string}
+					alt={title}
+					inferSize
+					class="mt-8 h-96 w-full rounded-lg object-cover"
+				/>
+			)
+		}
+
+		<div class="mt-8">
+			<Content components={components} />
+		</div>
 	</div>
 </BaseLayout>

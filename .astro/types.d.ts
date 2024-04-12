@@ -206,6 +206,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
+"this-is-a-draft.mdx": {
+	id: "this-is-a-draft.mdx";
+  slug: "this-is-a-draft";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 "top-10-ides-for-astrojs.mdx": {
 	id: "top-10-ides-for-astrojs.mdx";
   slug: "top-10-ides-for-astrojs";

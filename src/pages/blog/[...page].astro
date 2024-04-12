@@ -11,20 +11,47 @@ import {
 	PaginationNext,
 	PaginationPrevious,
 } from '@/components/ui/pagination';
+import { Image } from 'astro:assets';
 
 interface BlogPost {
 	data: {
 		title: string;
 		description: string;
+		datePublished?: string;
+		dateModified?: string;
+		author?: [
+			{
+				type?: string;
+				name: string;
+				url?: string;
+			},
+		];
+		image?: string;
+		isDraft?: boolean;
 	};
 	slug: string;
 }
 
 export async function getStaticPaths({ paginate }: { paginate: Function }) {
 	const allBlogposts = await getCollection('blog');
-	const postsPerPage = 4;
+	const publishedBlogPosts: any = (post: BlogPost) => !post.data.isDraft;
+	const sortedPosts = allBlogposts.filter(publishedBlogPosts).sort((a, b) => {
+		const dateA = a.data.dateModified
+			? new Date(a.data.dateModified)
+			: a.data.datePublished
+				? new Date(a.data.datePublished)
+				: new Date(0);
+		const dateB = b.data.dateModified
+			? new Date(b.data.dateModified)
+			: b.data.datePublished
+				? new Date(b.data.datePublished)
+				: new Date(0);
+		return dateB.getTime() - dateA.getTime();
+	});
 
-	return paginate(allBlogposts, {
+	const postsPerPage = 6;
+
+	return paginate(sortedPosts, {
 		pageSize: postsPerPage,
 	});
 }
@@ -44,30 +71,89 @@ const {
 <BaseLayout
 	title={`Blog Page ${page.currentPage} | Astro Deploy`}
 	description="Explore insightful articles on our Blog: Dive into a world of knowledge through posts crafted with expertise. Discover, learn, and grow with us.">
-	<div class="container mx-auto px-4 py-8 sm:py-12 lg:px-8 lg:py-16 xl:max-w-7xl">
-		<div class="text-center text-zinc-800 dark:text-zinc-200">
+	<div class="container mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+		<div class="mb-12 text-center">
 			<Heading level={1}>Blog</Heading>
 			<Search />
-			<p class="text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+			<p class="mt-4 text-xl text-zinc-600 dark:text-zinc-400">
 				Here are some blogposts, they are located in the repository as mdx files.
 			</p>
 		</div>
 		<hr class="my-8 border-t border-zinc-300 dark:border-zinc-700" />
-		<div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
 			{
 				page.data.map((post) => (
-					<div class="rotate-1 transform rounded-lg bg-white p-6 shadow-md transition-transform duration-300 hover:rotate-0 dark:bg-zinc-800">
-						<h2
-							transition:name={post.data.title}
-							class="mb-2 text-xl font-semibold text-zinc-800 hover:text-zinc-600 dark:text-zinc-200 dark:hover:text-zinc-400">
-							<a href={`/blog/${post.slug}/`}>{post.data.title}</a>
-						</h2>
-						<p class="mb-4 text-sm text-zinc-600 dark:text-zinc-400">{post.data.description}</p>
-						<a
-							class="text-primary-600 hover:text-primary-400 dark:text-primary-400 dark:hover:text-primary-300"
-							href={`/blog/${post.slug}/`}>
-							Read more
-						</a>
+					<div class="overflow-hidden rounded-lg bg-white p-6 shadow-lg transition duration-500 ease-in-out hover:-translate-y-1 hover:shadow-2xl dark:bg-zinc-800">
+						{post.data.image && (
+							<a href={`/blog/${post.slug}/`}>
+								<Image
+									src={post.data.image}
+									alt={post.data.title}
+									inferSize
+									class="h-48 w-full object-cover transition duration-500 ease-in-out hover:scale-105"
+								/>
+							</a>
+						)}
+						<div class="p-6">
+							<h2
+								transition:name={post.data.title}
+								class="mb-3 text-2xl font-bold leading-tight text-zinc-800 transition duration-300 ease-in-out hover:text-primary-600 dark:text-zinc-100 dark:hover:text-primary-400">
+								<a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+							</h2>
+							<div class="mb-4 text-sm text-zinc-600 dark:text-zinc-400">
+								<div class="mb-2 flex flex-wrap items-center">
+									{post.data.author && (
+										<>
+											<span class="mr-2">By</span>
+											{post.data.author.map((author, index) => (
+												<span class="mr-2">
+													{author.url ? (
+														<a
+															href={author.url}
+															class="font-medium text-primary-600 underline
+           hover:text-primary-500 dark:text-primary-400 dark:hover:text-primary-300">
+															{author.name}
+														</a>
+													) : (
+														<span
+															class="font-medium text-primary-600
+           dark:text-primary-400 ">
+															{author.name}
+														</span>
+													)}
+													{post.data.author && index < post.data.author.length - 1 && (
+														<span>, </span>
+													)}
+												</span>
+											))}
+										</>
+									)}
+								</div>
+								<div class="flex flex-wrap items-center">
+									{post.data.datePublished && (
+										<time datetime={post.data.datePublished} class="mr-4">
+											<span class="mr-1">Published:</span>
+											{new Date(post.data.datePublished).toLocaleDateString('en-US', {
+												year: 'numeric',
+												month: 'short',
+												day: 'numeric',
+											})}
+										</time>
+									)}
+									{post.data.dateModified && (
+										<time datetime={post.data.dateModified}>
+											<span class="mr-1">Updated:</span>
+											{new Date(post.data.dateModified).toLocaleDateString('en-US', {
+												year: 'numeric',
+												month: 'short',
+												day: 'numeric',
+											})}
+										</time>
+									)}
+								</div>
+							</div>
+							<p class="text-zinc-600 dark:text-zinc-400">{post.data.description}</p>
+						</div>
 					</div>
 				))
 			}
