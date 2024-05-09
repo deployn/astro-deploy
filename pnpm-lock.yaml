@@ -50,8 +50,8 @@ devDependencies:
     specifier: ^19.2.0
     version: 19.2.0(@types/node@20.12.11)(commitizen@4.3.0)(inquirer@9.2.20)(typescript@5.4.5)
   '@directus/sdk':
-    specifier: ^15.1.0
-    version: 15.1.0
+    specifier: ^16.0.0
+    version: 16.0.0
   '@iconify-json/line-md':
     specifier: ^1.1.37
     version: 1.1.37
@@ -829,15 +829,15 @@ packages:
     engines: {node: '>=14'}
     dev: false
 
-  /@directus/sdk@15.1.0:
-    resolution: {integrity: sha512-M2+Z1WmU8Q5KlR22K5ugmBHq10a6tcGl3QuvGKnN+jNwDnRyN5brJxt7FvgtWrY3Q1ToGLxmL37GHAH9s12dlQ==}
+  /@directus/sdk@16.0.0:
+    resolution: {integrity: sha512-DuY32oukjGj24tto27E/2P3z3kwrVtxhM5dqPaVF6GNT50IQVR5g4v+u5nq/6hlrUc8KNispTRFRN/JXRsxV5w==}
     engines: {node: '>=18.0.0'}
     dependencies:
-      '@directus/system-data': 1.0.2
+      '@directus/system-data': 1.0.3
     dev: true
 
-  /@directus/system-data@1.0.2:
-    resolution: {integrity: sha512-PweDAwTz4zImEGJnhoaX8apOCvcAfE0aGQrCSk+3cf1sLso0ShNlcDvUymtVfrqOXy0qT9sLa833bpJVaXF5ng==}
+  /@directus/system-data@1.0.3:
+    resolution: {integrity: sha512-Dr7w2RZiX3/+kBOLqz8KkMHXmDhzVVraaK+CLQNgsB1FOxotuegyWfQxTi+YvDhH9gEs8/yZZBKeyQetcTQfSg==}
     dev: true
 
   /@emmetio/abbreviation@2.3.3:
