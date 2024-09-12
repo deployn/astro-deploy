@@ -4,11 +4,17 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	prefix: '',
 	theme: {
+		screens: {
+			sm: '600px',
+			md: '840px',
+			lg: '1200px',
+			xl: '1600px',
+		},
 		container: {
 			center: true,
 			padding: '2rem',
 			screens: {
-				'2xl': '1400px',
+				xl: '1600px',
 			},
 		},
 		extend: {
