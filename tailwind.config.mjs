@@ -5,10 +5,17 @@ export default {
 	prefix: '',
 	theme: {
 		screens: {
+			xs: { max: '600px' },
 			sm: '600px',
 			md: '840px',
 			lg: '1200px',
 			xl: '1600px',
+
+			'h-xs': { raw: '(max-height: 600px)' },
+			'h-sm': { raw: '(min-height: 600px)' },
+			'h-md': { raw: '(min-height: 840px)' },
+			'h-lg': { raw: '(min-height: 1200px)' },
+			'h-xl': { raw: '(min-height: 1600px)' },
 		},
 		container: {
 			center: true,
