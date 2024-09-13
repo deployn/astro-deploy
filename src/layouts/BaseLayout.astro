@@ -33,8 +33,8 @@ const { title, description, lang = 'en', noindex, nofollow } = Astro.props as Pr
 	</head>
 	<body class="flex min-h-screen flex-col dark:bg-secondary">
 		<Header />
-		<main class="flex-grow">
-			<!-- Increased padding-bottom for mobile -->
+		<main class="flex-grow pb-20 sm:pb-0 sm:pl-16 md:pl-0">
+			<!-- Added padding-left for sm screens -->
 			<slot />
 		</main>
 		<Footer />
