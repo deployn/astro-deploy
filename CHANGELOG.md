@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/deployn/astro-deploy/compare/v1.27.0...v1.28.0) (2024-09-13)
+
+
+### Features
+
+* **header:** improve mobile menu functionality and add navigation rail ([6fdffbe](https://github.com/deployn/astro-deploy/commit/6fdffbe5c631935cf79d8bf8b7d89df143bc4111))
+
 # [1.27.0](https://github.com/deployn/astro-deploy/compare/v1.26.0...v1.27.0) (2024-04-12)
 
 
