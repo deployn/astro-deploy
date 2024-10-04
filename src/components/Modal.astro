@@ -1,0 +1,68 @@
+---
+interface Props {
+	id: string;
+	title: string;
+}
+
+const { id, title } = Astro.props;
+---
+
+<div
+	id={id}
+	class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm">
+	<div
+		class="w-full max-w-lg transform rounded-2xl bg-white p-6 shadow-xl transition-all dark:bg-gray-800">
+		<div class="flex items-center justify-between">
+			<h3 class="text-2xl font-semibold text-gray-900 dark:text-white">
+				{title}
+			</h3>
+			<button
+				type="button"
+				class="rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
+				onclick={`window.closeModal('${id}')`}>
+				<svg
+					class="h-6 w-6"
+					fill="currentColor"
+					viewBox="0 0 20 20"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+						fill-rule="evenodd"
+						d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+						clip-rule="evenodd">
+					</path>
+				</svg>
+			</button>
+		</div>
+		<div class="mt-4 space-y-6">
+			<slot />
+		</div>
+	</div>
+</div>
+
+<script>
+	interface CustomWindow extends Window {
+		closeModal: (id: string) => void;
+		openModal: (id: string) => void;
+	}
+
+	declare let window: CustomWindow;
+
+	function closeModal(id: string) {
+		const modal = document.getElementById(id);
+		if (modal) {
+			modal.classList.add('hidden');
+			document.body.classList.remove('overflow-hidden');
+		}
+	}
+
+	function openModal(id: string) {
+		const modal = document.getElementById(id);
+		if (modal) {
+			modal.classList.remove('hidden');
+			document.body.classList.add('overflow-hidden');
+		}
+	}
+
+	window.closeModal = closeModal;
+	window.openModal = openModal;
+</script>
