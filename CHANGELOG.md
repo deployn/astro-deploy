@@ -1,3 +1,10 @@
+# [1.29.0-beta.1](https://github.com/deployn/astro-deploy/compare/v1.28.0...v1.29.0-beta.1) (2024-10-04)
+
+
+### Features
+
+* **Dockerfile:** use Alpine base image and add healthcheck ([02e218d](https://github.com/deployn/astro-deploy/commit/02e218d1853c3c06d48bb3f8811564d910c61837))
+
 # [1.28.0](https://github.com/deployn/astro-deploy/compare/v1.27.0...v1.28.0) (2024-09-13)
 
 
