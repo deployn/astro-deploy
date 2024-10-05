@@ -1,3 +1,10 @@
+# [1.29.0-beta.3](https://github.com/deployn/astro-deploy/compare/v1.29.0-beta.2...v1.29.0-beta.3) (2024-10-05)
+
+
+### Features
+
+* **blog:** add redirect to 404 page if entry is not found ([6cd32df](https://github.com/deployn/astro-deploy/commit/6cd32df0eeadad3094cc35724961a4bbd5541eb0))
+
 # [1.29.0-beta.2](https://github.com/deployn/astro-deploy/compare/v1.29.0-beta.1...v1.29.0-beta.2) (2024-10-05)
 
 
