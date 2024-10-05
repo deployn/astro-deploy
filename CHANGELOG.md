@@ -1,3 +1,10 @@
+# [1.29.0-beta.2](https://github.com/deployn/astro-deploy/compare/v1.29.0-beta.1...v1.29.0-beta.2) (2024-10-05)
+
+
+### Features
+
+* add 404 page ([04cba4f](https://github.com/deployn/astro-deploy/commit/04cba4fa051b1c8958aa4dfe99266c56d0e8cf0b))
+
 # [1.29.0-beta.1](https://github.com/deployn/astro-deploy/compare/v1.28.0...v1.29.0-beta.1) (2024-10-04)
 
 
