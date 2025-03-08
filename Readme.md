@@ -6,7 +6,7 @@ A custom Astro.js template
 
 ## Features
 
-- 🚀 Astro.js 4 for modern web development.
+- 🚀 Astro.js 5 for modern web development.
 - 🐳 Docker integration for consistent environments and easy deployment.
 - 🍃 Tailwind CSS for utility-first styling and rapid UI development.
 - ⚛️ React.js integration, enabling complex UI construction with ease.
