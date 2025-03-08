@@ -91,7 +91,7 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       commitizen:
-        specifier: ^4.3.0
+        specifier: ^4.3.1
         version: 4.3.1(@types/node@22.13.9)(typescript@5.8.2)
       cz-conventional-changelog:
         specifier: ^3.3.0
@@ -109,7 +109,7 @@ importers:
         specifier: ^0.14.1
         version: 0.14.1
       prettier-plugin-tailwindcss:
-        specifier: ^0.6.6
+        specifier: ^0.6.8
         version: 0.6.11(prettier-plugin-astro@0.14.1)(prettier@3.5.3)
       pwa-asset-generator:
         specifier: ^6.3.2

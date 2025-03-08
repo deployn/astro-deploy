@@ -21,6 +21,11 @@ interface Props {
 }
 
 const { entry } = Astro.props as Props;
+
+if (!entry) {
+	return Astro.redirect('/404');
+}
+
 const { Content } = await entry.render();
 const components = { table: Table };
 const {
