@@ -15,6 +15,7 @@
     "upgrade": "pnpm update --interactive --latest",
     "commit": "cz"
   },
+  "packageManager": "pnpm@9.8.0",
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",
     "@astrojs/check": "^0.9.4",
