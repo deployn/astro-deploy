@@ -1,7 +1,7 @@
 {
   "name": "astro-deploy",
   "type": "module",
-  "version": "1.29.0-beta.3",
+  "version": "1.29.0",
   "description": "A custom Astro.js template",
   "private": true,
   "scripts": {

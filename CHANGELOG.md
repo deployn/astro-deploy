@@ -1,3 +1,12 @@
+# [1.29.0](https://github.com/deployn/astro-deploy/compare/v1.28.0...v1.29.0) (2025-03-08)
+
+
+### Features
+
+* add 404 page ([04cba4f](https://github.com/deployn/astro-deploy/commit/04cba4fa051b1c8958aa4dfe99266c56d0e8cf0b))
+* **blog:** add redirect to 404 page if entry is not found ([6cd32df](https://github.com/deployn/astro-deploy/commit/6cd32df0eeadad3094cc35724961a4bbd5541eb0))
+* **Dockerfile:** use Alpine base image and add healthcheck ([02e218d](https://github.com/deployn/astro-deploy/commit/02e218d1853c3c06d48bb3f8811564d910c61837))
+
 # [1.29.0-beta.3](https://github.com/deployn/astro-deploy/compare/v1.29.0-beta.2...v1.29.0-beta.3) (2024-10-05)
 
 
