@@ -1,5 +1,5 @@
 # Build Stage
-FROM node:20-alpine AS build
+FROM node:22-slim AS build
 
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
