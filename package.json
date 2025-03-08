@@ -18,14 +18,14 @@
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",
     "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^3.1.7",
+    "@astrojs/mdx": "^3.1.8",
     "@astrojs/react": "^3.6.2",
-    "@astrojs/sitemap": "^3.2.0",
-    "@astrojs/tailwind": "^5.1.1",
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/tailwind": "^5.1.2",
     "@radix-ui/react-dropdown-menu": "^2.1.2",
     "@radix-ui/react-slot": "^1.1.0",
-    "astro": "^4.15.11",
-    "astro-expressive-code": "^0.37.0",
+    "astro": "^4.16.7",
+    "astro-expressive-code": "^0.37.1",
     "astro-icon": "^1.1.1"
   },
   "devDependencies": {
